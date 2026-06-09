@@ -1,0 +1,100 @@
+{"id": 1, "cat": "files", "q": "แสดงไฟล์ทั้งหมดในโฟลเดอร์นี้รวมไฟล์ซ่อนด้วย", "ex": "ls -la", "must": ["\\bls\\b", "-[a-zA-Z]*a"]}
+{"id": 2, "cat": "files", "q": "แสดงไฟล์แบบละเอียดมีขนาดและสิทธิ์", "ex": "ls -l", "must": ["\\bls\\b", "-[a-zA-Z]*l"]}
+{"id": 3, "cat": "files", "q": "ฉันอยู่โฟลเดอร์ไหนตอนนี้", "ex": "pwd", "must": ["\\bpwd\\b"]}
+{"id": 4, "cat": "files", "q": "แสดงโครงสร้างโฟลเดอร์แบบต้นไม้", "ex": "tree", "must": ["\\btree\\b|\\bls\\b.*-R|\\bfind\\b"]}
+{"id": 5, "cat": "files", "q": "เรียงไฟล์ตามขนาดจากใหญ่ไปเล็ก", "ex": "ls -lS", "must": ["\\bls\\b", "-[a-zA-Z]*S|sort"]}
+{"id": 6, "cat": "files", "q": "เรียงไฟล์ตามเวลาที่แก้ไขล่าสุด", "ex": "ls -lt", "must": ["\\bls\\b", "-[a-zA-Z]*t"]}
+{"id": 7, "cat": "files", "q": "นับว่าในโฟลเดอร์นี้มีกี่ไฟล์", "ex": "ls | wc -l", "must": ["\\bls\\b|\\bfind\\b", "\\bwc\\b|-l"]}
+{"id": 8, "cat": "files", "q": "แสดงเฉพาะไฟล์นามสกุล .py", "ex": "ls *.py", "must": ["\\.py", "\\bls\\b|\\bfind\\b"]}
+{"id": 9, "cat": "files", "q": "ดูข้อมูลรายละเอียดของไฟล์ README.md เช่นขนาดและเวลาแก้ไข", "ex": "stat README.md", "must": ["\\bstat\\b|\\bls\\b", "README"]}
+{"id": 10, "cat": "files", "q": "หาว่าคำสั่ง python อยู่ที่ path ไหน", "ex": "which python", "must": ["\\bwhich\\b|\\bwhereis\\b|\\btype\\b", "python"]}
+{"id": 11, "cat": "search", "q": "หาไฟล์ชื่อ config.json ในโฟลเดอร์นี้และโฟลเดอร์ย่อย", "ex": "find . -name config.json", "must": ["\\bfind\\b|\\bfd\\b", "config\\.json"]}
+{"id": 12, "cat": "search", "q": "หาคำว่า TODO ในไฟล์ทุกไฟล์ในโฟลเดอร์นี้", "ex": "grep -r TODO .", "must": ["\\bgrep\\b|\\brg\\b", "TODO"]}
+{"id": 13, "cat": "search", "q": "หาคำว่า error แบบไม่สนตัวพิมพ์ใหญ่เล็กในไฟล์ log.txt", "ex": "grep -i error log.txt", "must": ["\\bgrep\\b|\\brg\\b", "-[a-zA-Z]*i", "error"]}
+{"id": 14, "cat": "search", "q": "หาไฟล์ที่ใหญ่กว่า 100MB", "ex": "find . -size +100M", "must": ["\\bfind\\b", "-size", "100M|\\+100M"]}
+{"id": 15, "cat": "search", "q": "หาไฟล์ที่ถูกแก้ไขภายใน 7 วันล่าสุด", "ex": "find . -mtime -7", "must": ["\\bfind\\b", "-mtime", "7"]}
+{"id": 16, "cat": "search", "q": "นับจำนวนบรรทัดที่มีคำว่า warning ในไฟล์ app.log", "ex": "grep -c warning app.log", "must": ["\\bgrep\\b", "-[a-zA-Z]*c|wc", "warning"]}
+{"id": 17, "cat": "search", "q": "หาไฟล์ทั้งหมดที่ลงท้ายด้วย .tmp", "ex": "find . -name '*.tmp'", "must": ["\\bfind\\b|\\bls\\b", "\\.tmp"]}
+{"id": 18, "cat": "search", "q": "แสดงเลขบรรทัดด้วยตอนค้นคำว่า def ในไฟล์ main.py", "ex": "grep -n def main.py", "must": ["\\bgrep\\b", "-[a-zA-Z]*n", "def", "main\\.py"]}
+{"id": 19, "cat": "search", "q": "หาโฟลเดอร์ทั้งหมดชื่อ node_modules", "ex": "find . -type d -name node_modules", "must": ["\\bfind\\b", "-type\\s+d", "node_modules"]}
+{"id": 20, "cat": "search", "q": "ค้นหาคำว่า password ในทุกไฟล์แบบ recursive", "ex": "grep -r password .", "must": ["\\bgrep\\b|\\brg\\b", "-[a-zA-Z]*r|rg", "password"]}
+{"id": 21, "cat": "system", "q": "เช็คพื้นที่ดิสก์ที่เหลือ", "ex": "df -h", "must": ["\\bdf\\b", "-[a-zA-Z]*h"]}
+{"id": 22, "cat": "system", "q": "ดูว่าโฟลเดอร์ไหนกินพื้นที่เยอะสุด", "ex": "du -sh * | sort -h", "must": ["\\bdu\\b", "-[a-zA-Z]*h|sort"]}
+{"id": 23, "cat": "system", "q": "เช็คการใช้แรม", "ex": "free -h", "must": ["\\bfree\\b", "-[a-zA-Z]*h|-m|-g"]}
+{"id": 24, "cat": "system", "q": "ดู process ที่กำลังรันอยู่ทั้งหมด", "ex": "ps aux", "must": ["\\bps\\b", "aux|-e|-A"]}
+{"id": 25, "cat": "system", "q": "เครื่องนี้ใช้ระบบปฏิบัติการอะไร kernel เวอร์ชันไหน", "ex": "uname -a", "must": ["\\buname\\b", "-[a-zA-Z]*a|-r"]}
+{"id": 26, "cat": "system", "q": "เครื่องนี้เปิดมานานแค่ไหนแล้ว", "ex": "uptime", "must": ["\\buptime\\b"]}
+{"id": 27, "cat": "system", "q": "ดู process ที่กิน cpu มากสุด 5 อันดับแรก", "ex": "ps aux --sort=-%cpu | head -5", "must": ["\\bps\\b|\\btop\\b", "sort|%cpu|head"]}
+{"id": 28, "cat": "system", "q": "เครื่องนี้มี cpu กี่ core", "ex": "nproc", "must": ["\\bnproc\\b|\\blscpu\\b|cpuinfo"]}
+{"id": 29, "cat": "system", "q": "ดูวันเวลาปัจจุบัน", "ex": "date", "must": ["\\bdate\\b"]}
+{"id": 30, "cat": "system", "q": "ฉัน login ด้วย user อะไร", "ex": "whoami", "must": ["\\bwhoami\\b|\\bid\\b"]}
+{"id": 31, "cat": "text", "q": "แสดง 10 บรรทัดแรกของไฟล์ data.csv", "ex": "head -n 10 data.csv", "must": ["\\bhead\\b", "data\\.csv"]}
+{"id": 32, "cat": "text", "q": "แสดง 20 บรรทัดสุดท้ายของไฟล์ access.log", "ex": "tail -n 20 access.log", "must": ["\\btail\\b", "-n?\\s*20|-20", "access\\.log"]}
+{"id": 33, "cat": "text", "q": "ดู log แบบเรียลไทม์ของไฟล์ server.log", "ex": "tail -f server.log", "must": ["\\btail\\b", "-[a-zA-Z]*f", "server\\.log"]}
+{"id": 34, "cat": "text", "q": "นับจำนวนบรรทัดในไฟล์ notes.txt", "ex": "wc -l notes.txt", "must": ["\\bwc\\b", "-[a-zA-Z]*l", "notes\\.txt"]}
+{"id": 35, "cat": "text", "q": "นับจำนวนคำในไฟล์ essay.txt", "ex": "wc -w essay.txt", "must": ["\\bwc\\b", "-[a-zA-Z]*w", "essay\\.txt"]}
+{"id": 36, "cat": "text", "q": "แสดงเนื้อหาไฟล์ config.yaml พร้อมเลขบรรทัด", "ex": "cat -n config.yaml", "must": ["\\bcat\\b|\\bnl\\b", "-n|nl", "config\\.yaml"]}
+{"id": 37, "cat": "text", "q": "เรียงบรรทัดในไฟล์ names.txt ตามตัวอักษร", "ex": "sort names.txt", "must": ["\\bsort\\b", "names\\.txt"]}
+{"id": 38, "cat": "text", "q": "ลบบรรทัดซ้ำในไฟล์ list.txt", "ex": "sort -u list.txt", "must": ["\\buniq\\b|sort\\s+-u", "list\\.txt"]}
+{"id": 39, "cat": "text", "q": "แทนที่คำว่า foo ด้วย bar ในไฟล์ code.py", "ex": "sed -i 's/foo/bar/g' code.py", "must": ["\\bsed\\b", "s/foo/bar|foo.*bar", "code\\.py"]}
+{"id": 40, "cat": "text", "q": "แสดงเฉพาะคอลัมน์แรกของไฟล์ data.csv ที่คั่นด้วยจุลภาค", "ex": "cut -d, -f1 data.csv", "must": ["\\bcut\\b|\\bawk\\b", ",|-d", "data\\.csv"]}
+{"id": 41, "cat": "manip", "q": "สร้างโฟลเดอร์ชื่อ project", "ex": "mkdir project", "must": ["\\bmkdir\\b", "project"]}
+{"id": 42, "cat": "manip", "q": "สร้างโฟลเดอร์ซ้อนกัน a/b/c ในทีเดียว", "ex": "mkdir -p a/b/c", "must": ["\\bmkdir\\b", "-[a-zA-Z]*p", "a/b/c"]}
+{"id": 43, "cat": "manip", "q": "สร้างไฟล์เปล่าชื่อ test.txt", "ex": "touch test.txt", "must": ["\\btouch\\b", "test\\.txt"]}
+{"id": 44, "cat": "manip", "q": "ก๊อปไฟล์ a.txt ไปเป็น b.txt", "ex": "cp a.txt b.txt", "must": ["\\bcp\\b", "a\\.txt", "b\\.txt"]}
+{"id": 45, "cat": "manip", "q": "ก๊อปโฟลเดอร์ src ทั้งโฟลเดอร์ไปไว้ที่ backup", "ex": "cp -r src backup", "must": ["\\bcp\\b", "-[a-zA-Z]*r", "src", "backup"]}
+{"id": 46, "cat": "manip", "q": "เปลี่ยนชื่อไฟล์ old.txt เป็น new.txt", "ex": "mv old.txt new.txt", "must": ["\\bmv\\b", "old\\.txt", "new\\.txt"]}
+{"id": 47, "cat": "manip", "q": "ย้ายไฟล์ report.pdf ไปไว้ในโฟลเดอร์ docs", "ex": "mv report.pdf docs/", "must": ["\\bmv\\b", "report\\.pdf", "docs"]}
+{"id": 48, "cat": "manip", "q": "ลบไฟล์ temp.log", "ex": "rm temp.log", "must": ["\\brm\\b", "temp\\.log"]}
+{"id": 49, "cat": "manip", "q": "ลบโฟลเดอร์ว่างชื่อ empty", "ex": "rmdir empty", "must": ["\\brmdir\\b|\\brm\\b", "empty"]}
+{"id": 50, "cat": "manip", "q": "สร้าง symbolic link ชื่อ latest ชี้ไปที่ไฟล์ v1.2.0", "ex": "ln -s v1.2.0 latest", "must": ["\\bln\\b", "-s", "latest", "v1\\.2\\.0"]}
+{"id": 51, "cat": "perm", "q": "ทำให้สคริปต์ run.sh รันได้ (executable)", "ex": "chmod +x run.sh", "must": ["\\bchmod\\b", "\\+x|7", "run\\.sh"]}
+{"id": 52, "cat": "perm", "q": "ตั้งสิทธิ์ไฟล์ secret.key เป็น 600", "ex": "chmod 600 secret.key", "must": ["\\bchmod\\b", "600", "secret\\.key"]}
+{"id": 53, "cat": "perm", "q": "เปลี่ยนเจ้าของไฟล์ data.db เป็น user ชื่อ www", "ex": "chown www data.db", "must": ["\\bchown\\b", "www", "data\\.db"]}
+{"id": 54, "cat": "perm", "q": "ดูสิทธิ์ของไฟล์ app.conf", "ex": "ls -l app.conf", "must": ["\\bls\\b|\\bstat\\b", "-[a-zA-Z]*l|stat", "app\\.conf"]}
+{"id": 55, "cat": "perm", "q": "ให้ทุกคนอ่านไฟล์ public.txt ได้", "ex": "chmod 644 public.txt", "must": ["\\bchmod\\b", "\\+r|644|a\\+r", "public\\.txt"]}
+{"id": 56, "cat": "perm", "q": "ตั้งสิทธิ์ทั้งโฟลเดอร์ assets เป็น 755 แบบ recursive", "ex": "chmod -R 755 assets", "must": ["\\bchmod\\b", "-R", "755", "assets"]}
+{"id": 57, "cat": "perm", "q": "เปลี่ยน group ของไฟล์ shared.txt เป็น dev", "ex": "chgrp dev shared.txt", "must": ["\\bchown\\b|\\bchgrp\\b", "dev", "shared\\.txt"]}
+{"id": 58, "cat": "perm", "q": "ดูว่า user ปัจจุบันอยู่ใน group ไหนบ้าง", "ex": "groups", "must": ["\\bgroups\\b|\\bid\\b"]}
+{"id": 59, "cat": "perm", "q": "ยกเลิกสิทธิ์เขียนของไฟล์ readonly.txt สำหรับทุกคน", "ex": "chmod a-w readonly.txt", "must": ["\\bchmod\\b", "-w|a-w|444", "readonly\\.txt"]}
+{"id": 60, "cat": "perm", "q": "เปลี่ยนเจ้าของทั้งโฟลเดอร์ var เป็น root แบบ recursive", "ex": "chown -R root var", "must": ["\\bchown\\b", "-R", "root", "var"]}
+{"id": 61, "cat": "proc", "q": "หา process ที่ชื่อ nginx", "ex": "pgrep -a nginx", "must": ["\\bps\\b|\\bpgrep\\b", "nginx"]}
+{"id": 62, "cat": "proc", "q": "ปิด process ที่มี PID 1234", "ex": "kill 1234", "must": ["\\bkill\\b", "1234"]}
+{"id": 63, "cat": "proc", "q": "บังคับปิด process ชื่อ chrome ทั้งหมด", "ex": "pkill -9 chrome", "must": ["\\bpkill\\b|\\bkillall\\b", "-9|-KILL", "chrome"]}
+{"id": 64, "cat": "proc", "q": "ดูว่า port 8080 ถูกใช้โดย process ไหน", "ex": "lsof -i :8080", "must": ["\\blsof\\b|\\bss\\b|\\bnetstat\\b|\\bfuser\\b", "8080"]}
+{"id": 65, "cat": "proc", "q": "ดู process ที่กินแรมมากสุด", "ex": "ps aux --sort=-%mem | head", "must": ["\\bps\\b|\\btop\\b", "sort|%mem|rss"]}
+{"id": 66, "cat": "proc", "q": "นับจำนวน process ของ python ที่รันอยู่", "ex": "pgrep -c python", "must": ["\\bpgrep\\b|\\bps\\b", "python", "wc|-c"]}
+{"id": 67, "cat": "proc", "q": "รันคำสั่ง backup.sh แบบ background", "ex": "nohup bash backup.sh &", "must": ["backup\\.sh", "&|nohup|setsid"]}
+{"id": 68, "cat": "proc", "q": "ดูงานที่รันอยู่เบื้องหลังใน shell นี้", "ex": "jobs", "must": ["\\bjobs\\b"]}
+{"id": 69, "cat": "proc", "q": "ส่งสัญญาณ reload (HUP) ให้ process PID 555", "ex": "kill -HUP 555", "must": ["\\bkill\\b", "-1|-HUP|HUP", "555"]}
+{"id": 70, "cat": "proc", "q": "ดู tree ของ process แบบเป็นลำดับชั้น", "ex": "pstree", "must": ["\\bpstree\\b|\\bps\\b.*forest|-H"]}
+{"id": 71, "cat": "net", "q": "เช็คว่าต่อเน็ตได้ไหมด้วยการ ping google", "ex": "ping -c 4 google.com", "must": ["\\bping\\b", "google|8\\.8\\.8\\.8"]}
+{"id": 72, "cat": "net", "q": "ดู ip address ของเครื่องนี้", "ex": "ip a", "must": ["\\bip\\b\\s+a|\\bifconfig\\b|hostname\\s+-I"]}
+{"id": 73, "cat": "net", "q": "ดาวน์โหลดไฟล์จาก https://example.com/file.zip", "ex": "wget https://example.com/file.zip", "must": ["\\bcurl\\b|\\bwget\\b", "example\\.com/file\\.zip"]}
+{"id": 74, "cat": "net", "q": "ดูว่ามี port ไหนเปิดฟังอยู่บ้าง", "ex": "ss -ltn", "must": ["\\bss\\b|\\bnetstat\\b", "-l"]}
+{"id": 75, "cat": "net", "q": "ขอ header ของเว็บ https://example.com อย่างเดียว", "ex": "curl -I https://example.com", "must": ["\\bcurl\\b", "-I|--head", "example\\.com"]}
+{"id": 76, "cat": "net", "q": "หา ip ของโดเมน github.com", "ex": "dig github.com", "must": ["\\bdig\\b|\\bnslookup\\b|\\bhost\\b", "github\\.com"]}
+{"id": 77, "cat": "net", "q": "ดูตาราง routing ของเครื่อง", "ex": "ip route", "must": ["\\bip\\b\\s+r|\\broute\\b|netstat\\s+-r"]}
+{"id": 78, "cat": "net", "q": "ทดสอบว่าต่อ port 443 ของ example.com ได้ไหม", "ex": "nc -zv example.com 443", "must": ["\\bnc\\b|\\bcurl\\b|telnet|/dev/tcp", "example\\.com|443"]}
+{"id": 79, "cat": "net", "q": "ดาวน์โหลดไฟล์แล้วเซฟชื่อ out.html จาก https://example.com", "ex": "curl -o out.html https://example.com", "must": ["\\bcurl\\b|\\bwget\\b", "-o|-O", "out\\.html|example\\.com"]}
+{"id": 80, "cat": "net", "q": "ดู mac address ของ network interface", "ex": "ip link", "must": ["\\bip\\b\\s+link|\\bifconfig\\b|ether"]}
+{"id": 81, "cat": "archive", "q": "บีบอัดโฟลเดอร์ logs เป็นไฟล์ logs.tar.gz", "ex": "tar -czf logs.tar.gz logs", "must": ["\\btar\\b", "-?c.*z|czf", "logs"]}
+{"id": 82, "cat": "archive", "q": "แตกไฟล์ archive.tar.gz", "ex": "tar -xzf archive.tar.gz", "must": ["\\btar\\b", "-?x.*z|xzf", "archive\\.tar\\.gz"]}
+{"id": 83, "cat": "archive", "q": "ดูว่าในไฟล์ data.tar.gz มีอะไรบ้างโดยไม่แตก", "ex": "tar -tzf data.tar.gz", "must": ["\\btar\\b", "-?t|tzf|--list", "data\\.tar\\.gz"]}
+{"id": 84, "cat": "archive", "q": "บีบอัดไฟล์ big.log ด้วย gzip", "ex": "gzip big.log", "must": ["\\bgzip\\b", "big\\.log"]}
+{"id": 85, "cat": "archive", "q": "แตกไฟล์ project.zip", "ex": "unzip project.zip", "must": ["\\bunzip\\b", "project\\.zip"]}
+{"id": 86, "cat": "archive", "q": "บีบโฟลเดอร์ docs เป็นไฟล์ zip ชื่อ docs.zip", "ex": "zip -r docs.zip docs", "must": ["\\bzip\\b", "-r", "docs"]}
+{"id": 87, "cat": "archive", "q": "คลายไฟล์ data.gz กลับเป็นไฟล์ปกติ", "ex": "gunzip data.gz", "must": ["\\bgunzip\\b|gzip\\s+-d", "data\\.gz"]}
+{"id": 88, "cat": "archive", "q": "ดูรายชื่อไฟล์ในไฟล์ bundle.zip โดยไม่แตก", "ex": "unzip -l bundle.zip", "must": ["\\bunzip\\b", "-l", "bundle\\.zip"]}
+{"id": 89, "cat": "archive", "q": "บีบอัดทั้งโฟลเดอร์ www เป็น tar.gz ชื่อ web.tar.gz", "ex": "tar -czf web.tar.gz www", "must": ["\\btar\\b", "czf|-?c.*z", "web\\.tar\\.gz", "www"]}
+{"id": 90, "cat": "archive", "q": "แตกไฟล์ release.tar.gz ไปไว้ที่โฟลเดอร์ /opt/app", "ex": "tar -xzf release.tar.gz -C /opt/app", "must": ["\\btar\\b", "-?x.*z|xzf", "-C", "/opt/app"]}
+{"id": 91, "cat": "misc", "q": "เช็คสถานะ git ของโฟลเดอร์นี้", "ex": "git status", "must": ["\\bgit\\b", "status"]}
+{"id": 92, "cat": "misc", "q": "ดูประวัติ commit ล่าสุด 5 อัน แบบบรรทัดเดียว", "ex": "git log --oneline -5", "must": ["\\bgit\\b", "log", "oneline|-5|-n\\s*5"]}
+{"id": 93, "cat": "misc", "q": "ดูว่าตอนนี้แก้ไฟล์อะไรไปบ้างที่ยังไม่ commit", "ex": "git status", "must": ["\\bgit\\b", "diff|status"]}
+{"id": 94, "cat": "misc", "q": "ติดตั้งโปรแกรม htop ด้วย apt", "ex": "sudo apt install htop", "must": ["\\bapt\\b|apt-get", "install", "htop"]}
+{"id": 95, "cat": "misc", "q": "อัปเดตรายการแพ็กเกจของ apt", "ex": "sudo apt update", "must": ["\\bapt\\b|apt-get", "update"]}
+{"id": 96, "cat": "misc", "q": "ดูว่าตัวแปร PATH มีค่าอะไร", "ex": "echo $PATH", "must": ["echo\\s+\\$PATH|printenv\\s+PATH|\\$PATH"]}
+{"id": 97, "cat": "misc", "q": "สร้างตัวแปร env ชื่อ API_KEY ค่า abc123", "ex": "export API_KEY=abc123", "must": ["export\\s+API_KEY|API_KEY="]}
+{"id": 98, "cat": "misc", "q": "ดูประวัติคำสั่งที่เคยพิมพ์", "ex": "history", "must": ["\\bhistory\\b"]}
+{"id": 99, "cat": "misc", "q": "เคลียร์หน้าจอ terminal", "ex": "clear", "must": ["\\bclear\\b|\\bcls\\b"]}
+{"id": 100, "cat": "misc", "q": "ดูขนาดรวมของโฟลเดอร์ปัจจุบัน", "ex": "du -sh .", "must": ["\\bdu\\b", "-[a-zA-Z]*s", "-[a-zA-Z]*h|\\."]}

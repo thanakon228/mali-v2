@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# benchmark output
+bench/results.json
+
+# editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
