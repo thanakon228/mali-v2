@@ -1,0 +1,584 @@
+{
+  "harness": {
+    "total": 1000,
+    "paths": {
+      "model_only": 999,
+      "direct_shell": 1
+    },
+    "issues": {
+      "win_metaphor_weak_match": 48,
+      "weak_fewshot": 16,
+      "likely_not_terminal": 66,
+      "vague_request": 88,
+      "no_fewshot": 6,
+      "win_term_no_examples": 6
+    },
+    "by_category": {
+      "win_disk": {
+        "win_metaphor_weak_match": 1
+      },
+      "win_file": {
+        "win_metaphor_weak_match": 9
+      },
+      "win_git": {
+        "weak_fewshot": 2
+      },
+      "win_misc": {
+        "likely_not_terminal": 66,
+        "win_metaphor_weak_match": 21
+      },
+      "win_perm": {
+        "win_metaphor_weak_match": 1
+      },
+      "win_pkg": {
+        "weak_fewshot": 2,
+        "win_metaphor_weak_match": 4
+      },
+      "win_text": {
+        "win_metaphor_weak_match": 12
+      },
+      "win_vague": {
+        "weak_fewshot": 12,
+        "vague_request": 88,
+        "no_fewshot": 6,
+        "win_term_no_examples": 6
+      }
+    },
+    "samples": {
+      "win_metaphor_weak_match": [
+        {
+          "id": 4,
+          "q": "ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ",
+          "cat": "win_file"
+        },
+        {
+          "id": 37,
+          "q": "เปิดไฟล์ data.txt ด้วย notepad",
+          "cat": "win_text"
+        },
+        {
+          "id": 54,
+          "q": "Registry อยู่ไหน",
+          "cat": "win_misc"
+        },
+        {
+          "id": 55,
+          "q": "Control Panel อยู่ไหน",
+          "cat": "win_misc"
+        },
+        {
+          "id": 92,
+          "q": "ขอถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ",
+          "cat": "win_file"
+        }
+      ],
+      "weak_fewshot": [
+        {
+          "id": 27,
+          "q": "ถอนโปรแกรม firefox ออก",
+          "cat": "win_pkg"
+        },
+        {
+          "id": 47,
+          "q": "ดูสถานะ git",
+          "cat": "win_git"
+        },
+        {
+          "id": 80,
+          "q": "ทำยังไง",
+          "cat": "win_vague"
+        },
+        {
+          "id": 86,
+          "q": "แก้ให้หน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 168,
+          "q": "ขอทำยังไง",
+          "cat": "win_vague"
+        }
+      ],
+      "likely_not_terminal": [
+        {
+          "id": 50,
+          "q": "เปิด terminal ยังไง",
+          "cat": "win_misc"
+        },
+        {
+          "id": 52,
+          "q": "จอค้าง กดอะไร",
+          "cat": "win_misc"
+        },
+        {
+          "id": 54,
+          "q": "Registry อยู่ไหน",
+          "cat": "win_misc"
+        },
+        {
+          "id": 55,
+          "q": "Control Panel อยู่ไหน",
+          "cat": "win_misc"
+        },
+        {
+          "id": 57,
+          "q": "Print Screen จับภาพหน้าจอ",
+          "cat": "win_misc"
+        }
+      ],
+      "vague_request": [
+        {
+          "id": 80,
+          "q": "ทำยังไง",
+          "cat": "win_vague"
+        },
+        {
+          "id": 81,
+          "q": "ช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 82,
+          "q": "มันไม่ work",
+          "cat": "win_vague"
+        },
+        {
+          "id": 83,
+          "q": "พังหมดเลย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 84,
+          "q": "ปิดทั้งหมด",
+          "cat": "win_vague"
+        }
+      ],
+      "no_fewshot": [
+        {
+          "id": 81,
+          "q": "ช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 169,
+          "q": "ขอช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 257,
+          "q": "ช่วยช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 345,
+          "q": "อยากช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 433,
+          "q": "จะช่วยหน่อย",
+          "cat": "win_vague"
+        }
+      ],
+      "win_term_no_examples": [
+        {
+          "id": 81,
+          "q": "ช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 169,
+          "q": "ขอช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 257,
+          "q": "ช่วยช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 345,
+          "q": "อยากช่วยหน่อย",
+          "cat": "win_vague"
+        },
+        {
+          "id": 433,
+          "q": "จะช่วยหน่อย",
+          "cat": "win_vague"
+        }
+      ]
+    },
+    "fixup_regression_ids": [
+      84,
+      172,
+      260,
+      348,
+      436,
+      524,
+      612,
+      700,
+      788,
+      876,
+      964
+    ],
+    "coverage": {
+      "model_only_pct": 99.9,
+      "no_fewshot_pct": 0.6,
+      "vague_pct": 8.8
+    }
+  },
+  "model": {
+    "model": "thai-cli-3b-r2",
+    "tested": 1000,
+    "tool_rate_pct": 99.4,
+    "hint_match_pct": 71.1,
+    "no_tool_call": 6,
+    "wrong_cmd_vs_hint": 265,
+    "avg_latency_s": 0.89,
+    "by_category": {
+      "win_disk": 76.4,
+      "win_env": 93.9,
+      "win_file": 78.2,
+      "win_git": 95.5,
+      "win_misc": 44.8,
+      "win_net": 73.9,
+      "win_perm": 97.8,
+      "win_pkg": 57.4,
+      "win_proc": 64.6,
+      "win_text": 65.7,
+      "win_thai": 70.2,
+      "win_user": 93.9,
+      "win_vague": 93.2,
+      "win_zip": 97.0
+    },
+    "fail_samples": [
+      {
+        "id": 81,
+        "cat": "win_vague",
+        "q": "ช่วยหน่อย",
+        "cmd": null,
+        "parsed": false,
+        "hint_ok": true,
+        "content_preview": ""
+      },
+      {
+        "id": 361,
+        "cat": "win_file",
+        "q": "จะสร้างโฟลเดอร์ใหม่ชื่อ Desktop",
+        "cmd": null,
+        "parsed": false,
+        "hint_ok": false,
+        "content_preview": ");\r\r\r\n\n{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"mkdir Desktop\"}}"
+      },
+      {
+        "id": 663,
+        "cat": "win_git",
+        "q": "please ดูสถานะ git",
+        "cmd": null,
+        "parsed": false,
+        "hint_ok": false,
+        "content_preview": ");\r\r\r\n\n{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"git status\"}}"
+      },
+      {
+        "id": 676,
+        "cat": "win_misc",
+        "q": "please Bluetooth เปิดยังไง",
+        "cmd": null,
+        "parsed": false,
+        "hint_ok": false,
+        "content_preview": ");\r\r\r\n\n{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"hciconfig | grep -i up\"}}"
+      },
+      {
+        "id": 721,
+        "cat": "win_proc",
+        "q": "ใน linux ปิดโปรแกรม firefox ที่ค้าง",
+        "cmd": null,
+        "parsed": false,
+        "hint_ok": false,
+        "content_preview": ");\r\r\r\n\n{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"pkill -f firefox\"}}"
+      },
+      {
+        "id": 958,
+        "cat": "win_thai",
+        "q": "ผมใช้ windows มาก่อน Downloads อยู่ไหน",
+        "cmd": null,
+        "parsed": false,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"echo %LOCALAPPDATA%\\Downloads\"}}"
+      }
+    ],
+    "wrong_samples": [
+      {
+        "id": 4,
+        "cat": "win_file",
+        "q": "ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ",
+        "cmd": "find . -empty",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"find . -empty\"}}"
+      },
+      {
+        "id": 5,
+        "cat": "win_file",
+        "q": "เปิดโฟลเดอร์ temp ใน file explorer",
+        "cmd": "start temp",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"start temp\"}}"
+      },
+      {
+        "id": 7,
+        "cat": "win_file",
+        "q": "แสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้",
+        "cmd": "find . -ls",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"find . -ls\"}}"
+      },
+      {
+        "id": 13,
+        "cat": "win_disk",
+        "q": "ทำความสะอาดดิสก์เหมือน Disk Cleanup",
+        "cmd": "sudo apt autoremove --purge",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"sudo apt autoremove --purge\"}}"
+      },
+      {
+        "id": 15,
+        "cat": "win_proc",
+        "q": "เปิด Task Manager ดูโปรแกรมค้าง",
+        "cmd": "taskmgr",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"taskmgr\"}}"
+      },
+      {
+        "id": 16,
+        "cat": "win_proc",
+        "q": "ดูว่าโปรแกรมไหนกิน CPU เยอะ",
+        "cmd": "ps aux | sort -rn -k3,3 | head -n 10",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"ps aux | sort -rn -k3,3 | head -n 10\"}}"
+      },
+      {
+        "id": 22,
+        "cat": "win_net",
+        "q": "เช็คว่าต่อ wifi ได้ไหม",
+        "cmd": "ping -c 4 google.com",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"ping -c 4 google.com\"}}"
+      },
+      {
+        "id": 26,
+        "cat": "win_pkg",
+        "q": "ติดตั้งโปรแกรม ollama เหมือน install ใน Windows",
+        "cmd": "pip install ollama",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"pip install ollama\"}}"
+      },
+      {
+        "id": 29,
+        "cat": "win_pkg",
+        "q": "อัปเดต Windows update แบบนี้ทำยังไง",
+        "cmd": "wsl --update",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"wsl --update\"}}"
+      },
+      {
+        "id": 37,
+        "cat": "win_text",
+        "q": "เปิดไฟล์ data.txt ด้วย notepad",
+        "cmd": "notepad data.txt",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"notepad data.txt\"}}"
+      },
+      {
+        "id": 52,
+        "cat": "win_misc",
+        "q": "จอค้าง กดอะไร",
+        "cmd": "xdotool key ctrl+c",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"xdotool key ctrl+c\"}}"
+      },
+      {
+        "id": 54,
+        "cat": "win_misc",
+        "q": "Registry อยู่ไหน",
+        "cmd": "whereis registry",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"whereis registry\"}}"
+      },
+      {
+        "id": 55,
+        "cat": "win_misc",
+        "q": "Control Panel อยู่ไหน",
+        "cmd": "whereis controlpanel",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"whereis controlpanel\"}}"
+      },
+      {
+        "id": 58,
+        "cat": "win_misc",
+        "q": "เปิด Calculator",
+        "cmd": "calc",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"calc\"}}"
+      },
+      {
+        "id": 59,
+        "cat": "win_misc",
+        "q": "เช็คแบตเหลือเท่าไหร่",
+        "cmd": "free -h",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"free -h\"}}"
+      },
+      {
+        "id": 60,
+        "cat": "win_misc",
+        "q": "Bluetooth เปิดยังไง",
+        "cmd": "hciconfig | grep -i up",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"hciconfig | grep -i up\"}}"
+      },
+      {
+        "id": 61,
+        "cat": "win_misc",
+        "q": "ต่อ printer",
+        "cmd": "lp -dprinter",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"lp -dprinter\"}}"
+      },
+      {
+        "id": 74,
+        "cat": "win_thai",
+        "q": "รันสคริปต์ app.deb.sh",
+        "cmd": "sh app.deb.sh",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"sh app.deb.sh\"}}"
+      },
+      {
+        "id": 76,
+        "cat": "win_thai",
+        "q": "จะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง",
+        "cmd": "sudo -k",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"sudo -k\"}}"
+      },
+      {
+        "id": 77,
+        "cat": "win_thai",
+        "q": "Desktop อยู่ path ไหน",
+        "cmd": "find / -type d -name Desktop 2>/dev/null | head -1",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"find / -type d -name Desktop 2>/dev/null | head -1\"}}"
+      },
+      {
+        "id": 78,
+        "cat": "win_thai",
+        "q": "Downloads อยู่ไหน",
+        "cmd": "which wget",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"which wget\"}}"
+      },
+      {
+        "id": 79,
+        "cat": "win_thai",
+        "q": "Documents โฟลเดอร์เอกสารอยู่ไหน",
+        "cmd": "find / -type d -name Documents 2>/dev/null | head -1",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"find / -type d -name Documents 2>/dev/null | head -1\"}}"
+      },
+      {
+        "id": 92,
+        "cat": "win_file",
+        "q": "ขอถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ",
+        "cmd": "lsof +D /path/to/directory",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"lsof +D /path/to/directory\"}}"
+      },
+      {
+        "id": 93,
+        "cat": "win_file",
+        "q": "ขอเปิดโฟลเดอร์ src ใน file explorer",
+        "cmd": "start src",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"start src\"}}"
+      },
+      {
+        "id": 101,
+        "cat": "win_disk",
+        "q": "ขอทำความสะอาดดิสก์เหมือน Disk Cleanup",
+        "cmd": "sudo apt autoremove",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"sudo apt autoremove\"}}"
+      },
+      {
+        "id": 103,
+        "cat": "win_proc",
+        "q": "ขอเปิด Task Manager ดูโปรแกรมค้าง",
+        "cmd": "taskmgr",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"taskmgr\"}}"
+      },
+      {
+        "id": 104,
+        "cat": "win_proc",
+        "q": "ขอดูว่าโปรแกรมไหนกิน CPU เยอะ",
+        "cmd": "ps aux | sort -rn -k3,3 | head -n 10",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"ps aux | sort -rn -k3,3 | head -n 10\"}}"
+      },
+      {
+        "id": 107,
+        "cat": "win_proc",
+        "q": "ขอรีสตาร์ทเครื่อง",
+        "cmd": "sudo systemctl restart $(hostname)",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"sudo systemctl restart $(hostname)\"}}"
+      },
+      {
+        "id": 110,
+        "cat": "win_net",
+        "q": "ขอเช็คว่าต่อ wifi ได้ไหม",
+        "cmd": "ping -c 4 google.com",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"ping -c 4 google.com\"}}"
+      },
+      {
+        "id": 114,
+        "cat": "win_pkg",
+        "q": "ขอติดตั้งโปรแกรม docker เหมือน install ใน Windows",
+        "cmd": "sudo apt-get install docker",
+        "parsed": true,
+        "hint_ok": false,
+        "content_preview": "{\"name\": \"run_command\", \"arguments\": {\"cmd\": \"sudo apt-get install docker\"}}"
+      }
+    ]
+  },
+  "generated": 1000
+}

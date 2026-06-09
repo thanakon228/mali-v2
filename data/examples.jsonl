@@ -93,8 +93,28 @@
 {"id": 93, "cat": "misc", "q": "ดูว่าตอนนี้แก้ไฟล์อะไรไปบ้างที่ยังไม่ commit", "ex": "git status", "must": ["\\bgit\\b", "diff|status"]}
 {"id": 94, "cat": "misc", "q": "ติดตั้งโปรแกรม htop ด้วย apt", "ex": "sudo apt install htop", "must": ["\\bapt\\b|apt-get", "install", "htop"]}
 {"id": 95, "cat": "misc", "q": "อัปเดตรายการแพ็กเกจของ apt", "ex": "sudo apt update", "must": ["\\bapt\\b|apt-get", "update"]}
-{"id": 96, "cat": "misc", "q": "ดูว่าตัวแปร PATH มีค่าอะไร", "ex": "echo $PATH", "must": ["echo\\s+\\$PATH|printenv\\s+PATH|\\$PATH"]}
-{"id": 97, "cat": "misc", "q": "สร้างตัวแปร env ชื่อ API_KEY ค่า abc123", "ex": "export API_KEY=abc123", "must": ["export\\s+API_KEY|API_KEY="]}
-{"id": 98, "cat": "misc", "q": "ดูประวัติคำสั่งที่เคยพิมพ์", "ex": "history", "must": ["\\bhistory\\b"]}
+{"id": 96, "cat": "proc", "q": "หา process ollama ที่รันอยู่", "ex": "pgrep -a ollama", "must": ["\\bpgrep\\b|\\bps\\b", "ollama"]}
+{"id": 97, "cat": "proc", "q": "ปิด ollama", "ex": "pkill -f ollama", "must": ["\\bpkill\\b|\\bkillall\\b", "ollama"]}
+{"id": 98, "cat": "perm", "q": "เปลี่ยนสิทธิ์ไฟล์ให้ทุกคนอ่านเขียนได้", "ex": "chmod a+rw FILE", "must": ["\\bchmod\\b", "a\\+rw|666"]}
 {"id": 99, "cat": "misc", "q": "เคลียร์หน้าจอ terminal", "ex": "clear", "must": ["\\bclear\\b|\\bcls\\b"]}
 {"id": 100, "cat": "misc", "q": "ดูขนาดรวมของโฟลเดอร์ปัจจุบัน", "ex": "du -sh .", "must": ["\\bdu\\b", "-[a-zA-Z]*s", "-[a-zA-Z]*h|\\."]}
+{"id": 101, "cat": "win", "q": "เปิด Task Manager ดูโปรแกรมค้าง", "ex": "htop", "must": ["\\bhtop\\b|\\btop\\b|\\bps\\b"]}
+{"id": 102, "cat": "win", "q": "ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "ex": "ls ~/.local/share/Trash/files", "must": ["Trash|trash"]}
+{"id": 103, "cat": "win", "q": "Desktop อยู่ path ไหน", "ex": "xdg-user-dir DESKTOP", "must": ["xdg-user-dir|Desktop|\\$HOME"]}
+{"id": 104, "cat": "win", "q": "Downloads อยู่ไหน", "ex": "xdg-user-dir DOWNLOAD", "must": ["xdg-user-dir|Downloads|\\$HOME"]}
+{"id": 105, "cat": "win", "q": "ไดรฟ์ C อยู่ไหนใน Linux", "ex": "df -h /", "must": ["\\bdf\\b", "/"]}
+{"id": 106, "cat": "win", "q": "อัปเดต Windows update แบบนี้ทำยังไง", "ex": "sudo apt update", "must": ["\\bapt\\b", "update"]}
+{"id": 107, "cat": "win", "q": "รันแบบ Run as administrator", "ex": "sudo command", "must": ["\\bsudo\\b"]}
+{"id": 108, "cat": "win", "q": "ทำความสะอาดดิสก์เหมือน Disk Cleanup", "ex": "sudo apt autoremove", "must": ["autoremove|journalctl|apt"]}
+{"id": 109, "cat": "win", "q": "Registry อยู่ไหน", "ex": "ls /etc", "must": ["/etc|gsettings|dconf"]}
+{"id": 110, "cat": "win", "q": "Control Panel อยู่ไหน", "ex": "xdg-open gnome-control-center", "must": ["control|settings|xdg-open"]}
+{"id": 111, "cat": "win", "q": "Device Manager ดูยังไง", "ex": "lspci", "must": ["\\blspci\\b|\\blsusb\\b"]}
+{"id": 112, "cat": "win", "q": "เช็คว่าต่อ wifi ได้ไหม", "ex": "nmcli device wifi list", "must": ["\\bnmcli\\b|\\biwconfig\\b|wifi"]}
+{"id": 113, "cat": "win", "q": "Bluetooth เปิดยังไง", "ex": "bluetoothctl show", "must": ["bluetoothctl|rfkill"]}
+{"id": 114, "cat": "win", "q": "Print Screen จับภาพหน้าจอ", "ex": "scrot", "must": ["scrot|gnome-screenshot|import"]}
+{"id": 115, "cat": "win", "q": "เปิดไฟล์ด้วย notepad", "ex": "nano file.txt", "must": ["\\bnano\\b|\\bvim\\b|gedit"]}
+{"id": 116, "cat": "win", "q": "Blue Screen ใน Linux เรียกอะไร", "ex": "journalctl -k", "must": ["journalctl|dmesg|panic"]}
+{"id": 117, "cat": "win", "q": "Documents โฟลเดอร์เอกสารอยู่ไหน", "ex": "xdg-user-dir DOCUMENTS", "must": ["xdg-user-dir|Documents"]}
+{"id": 118, "cat": "win", "q": "เปิดโฟลเดอร์ใน file explorer", "ex": "xdg-open .", "must": ["xdg-open|nautilus|dolphin|thunar"]}
+{"id": 119, "cat": "win", "q": "ติดตั้งโปรแกรมเหมือน install ใน Windows", "ex": "sudo apt install", "must": ["\\bapt\\b|snap|flatpak", "install"]}
+{"id": 120, "cat": "win", "q": "ถอนโปรแกรมออกเหมือน uninstall", "ex": "sudo apt remove", "must": ["\\bapt\\b|snap remove|dpkg", "remove"]}

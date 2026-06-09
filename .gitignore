@@ -9,6 +9,7 @@ venv/
 
 # benchmark output
 bench/results.json
+bench/stress_model_run.log
 
 # editor / OS
 .idea/

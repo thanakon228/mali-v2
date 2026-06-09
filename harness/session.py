@@ -20,7 +20,8 @@ R = "\033[0m"
 
 def _help():
     print(f"""
-  {B}วิธีใช้:{R} พิมพ์คำขอเป็นภาษาไทยแล้วกด Enter เช่น "เช็คดิสก์", "ติดตั้ง htop"
+  {B}วิธีใช้:{R} พิมพ์คำขอเป็นภาษาไทย เช่น "เช็คดิสก์", "ดู git log"
+  {B}รันคำสั่งตรง:{R} พิมพ์ shell ได้เลย เช่น ps aux  หรือ !git log -5  (ข้ามโมเดล)
   {B}คำสั่งพิเศษ:{R}
     {AC}/setup{R}           ตั้งค่า
     {AC}/remember <ข้อความ>{R} จำความชอบ เช่น /remember ใช้ pnpm ไม่ใช่ npm
@@ -65,6 +66,9 @@ def repl(model: str | None = None) -> int:
         if low in ("exit", "quit", "ออก", "/exit", "/quit", "/q"):
             return 0
         if low in ("/help", "help", "/?"):
+            _help()
+            continue
+        if any(k in low for k in ("ทำอะไรได้", "ช่วยอะไร", "ใช้ยังไง", "ช่วยเหลือ")):
             _help()
             continue
         if low in ("/clear", "clear"):

@@ -6,7 +6,15 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TESTS = ["test_parse.py", "test_safety.py", "test_config.py", "test_tools.py"]
+TESTS = [
+    "test_parse.py",
+    "test_safety.py",
+    "test_config.py",
+    "test_tools.py",
+    "test_cmd_fixup.py",
+    "test_probe.py",
+    "test_vague.py",
+]
 
 
 def main() -> int:

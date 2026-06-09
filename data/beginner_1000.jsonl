@@ -1,0 +1,1000 @@
+{"id": 1, "cat": "win_file", "q": "อยาก copy ไฟล์ report.pdf เหมือนใน Windows", "hints": ["cp"]}
+{"id": 2, "cat": "win_file", "q": "ย้ายไฟล์ music.mp3 ไป home", "hints": ["mv"]}
+{"id": 3, "cat": "win_file", "q": "ลบไฟล์ config.json ทิ้ง", "hints": ["rm"]}
+{"id": 4, "cat": "win_file", "q": "ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 5, "cat": "win_file", "q": "เปิดโฟลเดอร์ temp ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 6, "cat": "win_file", "q": "หาไฟล์ชื่อ notes.md ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 7, "cat": "win_file", "q": "แสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 8, "cat": "win_file", "q": "เปลี่ยนชื่อไฟล์ backup.zip เป็น config.json", "hints": ["mv"]}
+{"id": 9, "cat": "win_file", "q": "สร้างโฟลเดอร์ใหม่ชื่อ home", "hints": ["mkdir"]}
+{"id": 10, "cat": "win_disk", "q": "ไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 11, "cat": "win_disk", "q": "เช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 12, "cat": "win_disk", "q": "ดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 13, "cat": "win_disk", "q": "ทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 14, "cat": "win_disk", "q": "ดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 15, "cat": "win_proc", "q": "เปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 16, "cat": "win_proc", "q": "ดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 17, "cat": "win_proc", "q": "ปิดโปรแกรม chrome ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 18, "cat": "win_proc", "q": "ดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 19, "cat": "win_proc", "q": "รีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 20, "cat": "win_proc", "q": "ปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 21, "cat": "win_proc", "q": "เครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 22, "cat": "win_net", "q": "เช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 23, "cat": "win_net", "q": "ดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 24, "cat": "win_net", "q": "ping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 25, "cat": "win_net", "q": "ดูว่า port 8080 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 26, "cat": "win_pkg", "q": "ติดตั้งโปรแกรม ollama เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 27, "cat": "win_pkg", "q": "ถอนโปรแกรม firefox ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 28, "cat": "win_pkg", "q": "ดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 29, "cat": "win_pkg", "q": "อัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 30, "cat": "win_perm", "q": "รันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 31, "cat": "win_perm", "q": "ไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 32, "cat": "win_perm", "q": "เปลี่ยนสิทธิ์ไฟล์ app.deb ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 33, "cat": "win_perm", "q": "ไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 34, "cat": "win_env", "q": "ตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 35, "cat": "win_env", "q": "ดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 36, "cat": "win_env", "q": "ตั้งค่า API_KEY=abc123 ชั่วคราว", "hints": ["export"]}
+{"id": 37, "cat": "win_text", "q": "เปิดไฟล์ data.txt ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 38, "cat": "win_text", "q": "แก้ไขไฟล์ config.json ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 39, "cat": "win_text", "q": "ดูเนื้อหาไฟล์ notes.md", "hints": ["cat|less|head"]}
+{"id": 40, "cat": "win_zip", "q": "บีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 41, "cat": "win_zip", "q": "แตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 42, "cat": "win_zip", "q": "แตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 43, "cat": "win_user", "q": "เปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 44, "cat": "win_user", "q": "ดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 45, "cat": "win_user", "q": "สลับ user", "hints": ["su |sudo -u"]}
+{"id": 46, "cat": "win_git", "q": "โหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 47, "cat": "win_git", "q": "ดูสถานะ git", "hints": ["git status"]}
+{"id": 48, "cat": "win_misc", "q": "เครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 49, "cat": "win_misc", "q": "ดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 50, "cat": "win_misc", "q": "เปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 51, "cat": "win_misc", "q": "คำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 52, "cat": "win_misc", "q": "จอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 53, "cat": "win_misc", "q": "Blue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 54, "cat": "win_misc", "q": "Registry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 55, "cat": "win_misc", "q": "Control Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 56, "cat": "win_misc", "q": "Device Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 57, "cat": "win_misc", "q": "Print Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 58, "cat": "win_misc", "q": "เปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 59, "cat": "win_misc", "q": "เช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 60, "cat": "win_misc", "q": "Bluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 61, "cat": "win_misc", "q": "ต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 62, "cat": "win_thai", "q": "จะลงโปรแกรม code ยังไง", "hints": ["apt|install|snap"]}
+{"id": 63, "cat": "win_thai", "q": "ขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 64, "cat": "win_thai", "q": "ไปที่โฟลเดอร์ home", "hints": ["cd"]}
+{"id": 65, "cat": "win_thai", "q": "อยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 66, "cat": "win_thai", "q": "ค้นหาคำว่า error ในไฟล์", "hints": ["grep|rg"]}
+{"id": 67, "cat": "win_thai", "q": "ดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 68, "cat": "win_thai", "q": "เช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 69, "cat": "win_thai", "q": "ลบทุกอย่างในโฟลเดอร์ src", "hints": ["rm"]}
+{"id": 70, "cat": "win_thai", "q": "สำเนาโฟลเดอร์ src ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 71, "cat": "win_thai", "q": "เปิดเว็บ github.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 72, "cat": "win_thai", "q": "ดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 73, "cat": "win_thai", "q": "เช็คว่า java ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 74, "cat": "win_thai", "q": "รันสคริปต์ app.deb.sh", "hints": ["bash|chmod|./"]}
+{"id": 75, "cat": "win_thai", "q": "ทำไมคำสั่ง python ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 76, "cat": "win_thai", "q": "จะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 77, "cat": "win_thai", "q": "Desktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 78, "cat": "win_thai", "q": "Downloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 79, "cat": "win_thai", "q": "Documents โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 80, "cat": "win_vague", "q": "ทำยังไง", "hints": []}
+{"id": 81, "cat": "win_vague", "q": "ช่วยหน่อย", "hints": []}
+{"id": 82, "cat": "win_vague", "q": "มันไม่ work", "hints": []}
+{"id": 83, "cat": "win_vague", "q": "พังหมดเลย", "hints": []}
+{"id": 84, "cat": "win_vague", "q": "ปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 85, "cat": "win_vague", "q": "ลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 86, "cat": "win_vague", "q": "แก้ให้หน่อย", "hints": []}
+{"id": 87, "cat": "win_vague", "q": "รันให้หน่อย", "hints": []}
+{"id": 88, "cat": "win_file", "q": "ขอจะคัดลอกไฟล์ notes.md ไปโฟลเดอร์ project ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 89, "cat": "win_file", "q": "ขออยาก copy ไฟล์ resume.docx เหมือนใน Windows", "hints": ["cp"]}
+{"id": 90, "cat": "win_file", "q": "ขอย้ายไฟล์ music.mp3 ไป temp", "hints": ["mv"]}
+{"id": 91, "cat": "win_file", "q": "ขอลบไฟล์ backup.zip ทิ้ง", "hints": ["rm"]}
+{"id": 92, "cat": "win_file", "q": "ขอถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 93, "cat": "win_file", "q": "ขอเปิดโฟลเดอร์ src ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 94, "cat": "win_file", "q": "ขอหาไฟล์ชื่อ app.deb ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 95, "cat": "win_file", "q": "ขอแสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 96, "cat": "win_file", "q": "ขอเปลี่ยนชื่อไฟล์ script.sh เป็น backup.zip", "hints": ["mv"]}
+{"id": 97, "cat": "win_file", "q": "ขอสร้างโฟลเดอร์ใหม่ชื่อ work", "hints": ["mkdir"]}
+{"id": 98, "cat": "win_disk", "q": "ขอไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 99, "cat": "win_disk", "q": "ขอเช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 100, "cat": "win_disk", "q": "ขอดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 101, "cat": "win_disk", "q": "ขอทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 102, "cat": "win_disk", "q": "ขอดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 103, "cat": "win_proc", "q": "ขอเปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 104, "cat": "win_proc", "q": "ขอดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 105, "cat": "win_proc", "q": "ขอปิดโปรแกรม spotify ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 106, "cat": "win_proc", "q": "ขอดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 107, "cat": "win_proc", "q": "ขอรีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 108, "cat": "win_proc", "q": "ขอปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 109, "cat": "win_proc", "q": "ขอเครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 110, "cat": "win_net", "q": "ขอเช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 111, "cat": "win_net", "q": "ขอดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 112, "cat": "win_net", "q": "ขอping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 113, "cat": "win_net", "q": "ขอดูว่า port 22 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 114, "cat": "win_pkg", "q": "ขอติดตั้งโปรแกรม docker เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 115, "cat": "win_pkg", "q": "ขอถอนโปรแกรม node ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 116, "cat": "win_pkg", "q": "ขอดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 117, "cat": "win_pkg", "q": "ขออัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 118, "cat": "win_perm", "q": "ขอรันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 119, "cat": "win_perm", "q": "ขอไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 120, "cat": "win_perm", "q": "ขอเปลี่ยนสิทธิ์ไฟล์ report.pdf ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 121, "cat": "win_perm", "q": "ขอไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 122, "cat": "win_env", "q": "ขอตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 123, "cat": "win_env", "q": "ขอดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 124, "cat": "win_env", "q": "ขอตั้งค่า API_KEY=abc123 ชั่วคราว", "hints": ["export"]}
+{"id": 125, "cat": "win_text", "q": "ขอเปิดไฟล์ script.sh ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 126, "cat": "win_text", "q": "ขอแก้ไขไฟล์ photo.jpg ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 127, "cat": "win_text", "q": "ขอดูเนื้อหาไฟล์ config.json", "hints": ["cat|less|head"]}
+{"id": 128, "cat": "win_zip", "q": "ขอบีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 129, "cat": "win_zip", "q": "ขอแตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 130, "cat": "win_zip", "q": "ขอแตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 131, "cat": "win_user", "q": "ขอเปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 132, "cat": "win_user", "q": "ขอดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 133, "cat": "win_user", "q": "ขอสลับ user", "hints": ["su |sudo -u"]}
+{"id": 134, "cat": "win_git", "q": "ขอโหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 135, "cat": "win_git", "q": "ขอดูสถานะ git", "hints": ["git status"]}
+{"id": 136, "cat": "win_misc", "q": "ขอเครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 137, "cat": "win_misc", "q": "ขอดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 138, "cat": "win_misc", "q": "ขอเปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 139, "cat": "win_misc", "q": "ขอคำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 140, "cat": "win_misc", "q": "ขอจอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 141, "cat": "win_misc", "q": "ขอBlue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 142, "cat": "win_misc", "q": "ขอRegistry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 143, "cat": "win_misc", "q": "ขอControl Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 144, "cat": "win_misc", "q": "ขอDevice Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 145, "cat": "win_misc", "q": "ขอPrint Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 146, "cat": "win_misc", "q": "ขอเปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 147, "cat": "win_misc", "q": "ขอเช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 148, "cat": "win_misc", "q": "ขอBluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 149, "cat": "win_misc", "q": "ขอต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 150, "cat": "win_thai", "q": "ขอจะลงโปรแกรม spotify ยังไง", "hints": ["apt|install|snap"]}
+{"id": 151, "cat": "win_thai", "q": "ขอขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 152, "cat": "win_thai", "q": "ขอไปที่โฟลเดอร์ work", "hints": ["cd"]}
+{"id": 153, "cat": "win_thai", "q": "ขออยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 154, "cat": "win_thai", "q": "ขอค้นหาคำว่า password ในไฟล์", "hints": ["grep|rg"]}
+{"id": 155, "cat": "win_thai", "q": "ขอดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 156, "cat": "win_thai", "q": "ขอเช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 157, "cat": "win_thai", "q": "ขอลบทุกอย่างในโฟลเดอร์ project", "hints": ["rm"]}
+{"id": 158, "cat": "win_thai", "q": "ขอสำเนาโฟลเดอร์ Desktop ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 159, "cat": "win_thai", "q": "ขอเปิดเว็บ example.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 160, "cat": "win_thai", "q": "ขอดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 161, "cat": "win_thai", "q": "ขอเช็คว่า ollama ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 162, "cat": "win_thai", "q": "ขอรันสคริปต์ music.mp3.sh", "hints": ["bash|chmod|./"]}
+{"id": 163, "cat": "win_thai", "q": "ขอทำไมคำสั่ง java ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 164, "cat": "win_thai", "q": "ขอจะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 165, "cat": "win_thai", "q": "ขอDesktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 166, "cat": "win_thai", "q": "ขอDownloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 167, "cat": "win_thai", "q": "ขอDocuments โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 168, "cat": "win_vague", "q": "ขอทำยังไง", "hints": []}
+{"id": 169, "cat": "win_vague", "q": "ขอช่วยหน่อย", "hints": []}
+{"id": 170, "cat": "win_vague", "q": "ขอมันไม่ work", "hints": []}
+{"id": 171, "cat": "win_vague", "q": "ขอพังหมดเลย", "hints": []}
+{"id": 172, "cat": "win_vague", "q": "ขอปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 173, "cat": "win_vague", "q": "ขอลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 174, "cat": "win_vague", "q": "ขอแก้ให้หน่อย", "hints": []}
+{"id": 175, "cat": "win_vague", "q": "ขอรันให้หน่อย", "hints": []}
+{"id": 176, "cat": "win_file", "q": "ช่วยจะคัดลอกไฟล์ config.json ไปโฟลเดอร์ Documents ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 177, "cat": "win_file", "q": "ช่วยอยาก copy ไฟล์ resume.docx เหมือนใน Windows", "hints": ["cp"]}
+{"id": 178, "cat": "win_file", "q": "ช่วยย้ายไฟล์ script.sh ไป src", "hints": ["mv"]}
+{"id": 179, "cat": "win_file", "q": "ช่วยลบไฟล์ script.sh ทิ้ง", "hints": ["rm"]}
+{"id": 180, "cat": "win_file", "q": "ช่วยถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 181, "cat": "win_file", "q": "ช่วยเปิดโฟลเดอร์ src ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 182, "cat": "win_file", "q": "ช่วยหาไฟล์ชื่อ photo.jpg ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 183, "cat": "win_file", "q": "ช่วยแสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 184, "cat": "win_file", "q": "ช่วยเปลี่ยนชื่อไฟล์ backup.zip เป็น report.pdf", "hints": ["mv"]}
+{"id": 185, "cat": "win_file", "q": "ช่วยสร้างโฟลเดอร์ใหม่ชื่อ Documents", "hints": ["mkdir"]}
+{"id": 186, "cat": "win_disk", "q": "ช่วยไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 187, "cat": "win_disk", "q": "ช่วยเช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 188, "cat": "win_disk", "q": "ช่วยดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 189, "cat": "win_disk", "q": "ช่วยทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 190, "cat": "win_disk", "q": "ช่วยดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 191, "cat": "win_proc", "q": "ช่วยเปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 192, "cat": "win_proc", "q": "ช่วยดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 193, "cat": "win_proc", "q": "ช่วยปิดโปรแกรม python ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 194, "cat": "win_proc", "q": "ช่วยดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 195, "cat": "win_proc", "q": "ช่วยรีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 196, "cat": "win_proc", "q": "ช่วยปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 197, "cat": "win_proc", "q": "ช่วยเครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 198, "cat": "win_net", "q": "ช่วยเช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 199, "cat": "win_net", "q": "ช่วยดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 200, "cat": "win_net", "q": "ช่วยping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 201, "cat": "win_net", "q": "ช่วยดูว่า port 3000 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 202, "cat": "win_pkg", "q": "ช่วยติดตั้งโปรแกรม spotify เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 203, "cat": "win_pkg", "q": "ช่วยถอนโปรแกรม firefox ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 204, "cat": "win_pkg", "q": "ช่วยดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 205, "cat": "win_pkg", "q": "ช่วยอัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 206, "cat": "win_perm", "q": "ช่วยรันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 207, "cat": "win_perm", "q": "ช่วยไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 208, "cat": "win_perm", "q": "ช่วยเปลี่ยนสิทธิ์ไฟล์ music.mp3 ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 209, "cat": "win_perm", "q": "ช่วยไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 210, "cat": "win_env", "q": "ช่วยตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 211, "cat": "win_env", "q": "ช่วยดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 212, "cat": "win_env", "q": "ช่วยตั้งค่า API_KEY=abc123 ชั่วคราว", "hints": ["export"]}
+{"id": 213, "cat": "win_text", "q": "ช่วยเปิดไฟล์ report.pdf ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 214, "cat": "win_text", "q": "ช่วยแก้ไขไฟล์ backup.zip ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 215, "cat": "win_text", "q": "ช่วยดูเนื้อหาไฟล์ resume.docx", "hints": ["cat|less|head"]}
+{"id": 216, "cat": "win_zip", "q": "ช่วยบีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 217, "cat": "win_zip", "q": "ช่วยแตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 218, "cat": "win_zip", "q": "ช่วยแตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 219, "cat": "win_user", "q": "ช่วยเปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 220, "cat": "win_user", "q": "ช่วยดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 221, "cat": "win_user", "q": "ช่วยสลับ user", "hints": ["su |sudo -u"]}
+{"id": 222, "cat": "win_git", "q": "ช่วยโหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 223, "cat": "win_git", "q": "ช่วยดูสถานะ git", "hints": ["git status"]}
+{"id": 224, "cat": "win_misc", "q": "ช่วยเครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 225, "cat": "win_misc", "q": "ช่วยดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 226, "cat": "win_misc", "q": "ช่วยเปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 227, "cat": "win_misc", "q": "ช่วยคำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 228, "cat": "win_misc", "q": "ช่วยจอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 229, "cat": "win_misc", "q": "ช่วยBlue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 230, "cat": "win_misc", "q": "ช่วยRegistry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 231, "cat": "win_misc", "q": "ช่วยControl Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 232, "cat": "win_misc", "q": "ช่วยDevice Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 233, "cat": "win_misc", "q": "ช่วยPrint Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 234, "cat": "win_misc", "q": "ช่วยเปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 235, "cat": "win_misc", "q": "ช่วยเช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 236, "cat": "win_misc", "q": "ช่วยBluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 237, "cat": "win_misc", "q": "ช่วยต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 238, "cat": "win_thai", "q": "ช่วยจะลงโปรแกรม nginx ยังไง", "hints": ["apt|install|snap"]}
+{"id": 239, "cat": "win_thai", "q": "ช่วยขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 240, "cat": "win_thai", "q": "ช่วยไปที่โฟลเดอร์ temp", "hints": ["cd"]}
+{"id": 241, "cat": "win_thai", "q": "ช่วยอยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 242, "cat": "win_thai", "q": "ช่วยค้นหาคำว่า function ในไฟล์", "hints": ["grep|rg"]}
+{"id": 243, "cat": "win_thai", "q": "ช่วยดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 244, "cat": "win_thai", "q": "ช่วยเช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 245, "cat": "win_thai", "q": "ช่วยลบทุกอย่างในโฟลเดอร์ backup", "hints": ["rm"]}
+{"id": 246, "cat": "win_thai", "q": "ช่วยสำเนาโฟลเดอร์ src ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 247, "cat": "win_thai", "q": "ช่วยเปิดเว็บ example.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 248, "cat": "win_thai", "q": "ช่วยดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 249, "cat": "win_thai", "q": "ช่วยเช็คว่า code ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 250, "cat": "win_thai", "q": "ช่วยรันสคริปต์ data.txt.sh", "hints": ["bash|chmod|./"]}
+{"id": 251, "cat": "win_thai", "q": "ช่วยทำไมคำสั่ง python ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 252, "cat": "win_thai", "q": "ช่วยจะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 253, "cat": "win_thai", "q": "ช่วยDesktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 254, "cat": "win_thai", "q": "ช่วยDownloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 255, "cat": "win_thai", "q": "ช่วยDocuments โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 256, "cat": "win_vague", "q": "ช่วยทำยังไง", "hints": []}
+{"id": 257, "cat": "win_vague", "q": "ช่วยช่วยหน่อย", "hints": []}
+{"id": 258, "cat": "win_vague", "q": "ช่วยมันไม่ work", "hints": []}
+{"id": 259, "cat": "win_vague", "q": "ช่วยพังหมดเลย", "hints": []}
+{"id": 260, "cat": "win_vague", "q": "ช่วยปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 261, "cat": "win_vague", "q": "ช่วยลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 262, "cat": "win_vague", "q": "ช่วยแก้ให้หน่อย", "hints": []}
+{"id": 263, "cat": "win_vague", "q": "ช่วยรันให้หน่อย", "hints": []}
+{"id": 264, "cat": "win_file", "q": "อยากจะคัดลอกไฟล์ music.mp3 ไปโฟลเดอร์ Pictures ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 265, "cat": "win_file", "q": "อยากอยาก copy ไฟล์ notes.md เหมือนใน Windows", "hints": ["cp"]}
+{"id": 266, "cat": "win_file", "q": "อยากย้ายไฟล์ data.txt ไป temp", "hints": ["mv"]}
+{"id": 267, "cat": "win_file", "q": "อยากลบไฟล์ photo.jpg ทิ้ง", "hints": ["rm"]}
+{"id": 268, "cat": "win_file", "q": "อยากถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 269, "cat": "win_file", "q": "อยากเปิดโฟลเดอร์ Documents ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 270, "cat": "win_file", "q": "อยากหาไฟล์ชื่อ data.txt ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 271, "cat": "win_file", "q": "อยากแสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 272, "cat": "win_file", "q": "อยากเปลี่ยนชื่อไฟล์ script.sh เป็น notes.md", "hints": ["mv"]}
+{"id": 273, "cat": "win_file", "q": "อยากสร้างโฟลเดอร์ใหม่ชื่อ backup", "hints": ["mkdir"]}
+{"id": 274, "cat": "win_disk", "q": "อยากไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 275, "cat": "win_disk", "q": "อยากเช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 276, "cat": "win_disk", "q": "อยากดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 277, "cat": "win_disk", "q": "อยากทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 278, "cat": "win_disk", "q": "อยากดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 279, "cat": "win_proc", "q": "อยากเปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 280, "cat": "win_proc", "q": "อยากดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 281, "cat": "win_proc", "q": "อยากปิดโปรแกรม nginx ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 282, "cat": "win_proc", "q": "อยากดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 283, "cat": "win_proc", "q": "อยากรีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 284, "cat": "win_proc", "q": "อยากปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 285, "cat": "win_proc", "q": "อยากเครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 286, "cat": "win_net", "q": "อยากเช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 287, "cat": "win_net", "q": "อยากดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 288, "cat": "win_net", "q": "อยากping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 289, "cat": "win_net", "q": "อยากดูว่า port 3000 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 290, "cat": "win_pkg", "q": "อยากติดตั้งโปรแกรม ollama เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 291, "cat": "win_pkg", "q": "อยากถอนโปรแกรม python ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 292, "cat": "win_pkg", "q": "อยากดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 293, "cat": "win_pkg", "q": "อยากอัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 294, "cat": "win_perm", "q": "อยากรันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 295, "cat": "win_perm", "q": "อยากไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 296, "cat": "win_perm", "q": "อยากเปลี่ยนสิทธิ์ไฟล์ photo.jpg ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 297, "cat": "win_perm", "q": "อยากไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 298, "cat": "win_env", "q": "อยากตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 299, "cat": "win_env", "q": "อยากดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 300, "cat": "win_env", "q": "อยากตั้งค่า API_KEY=abc123 ชั่วคราว", "hints": ["export"]}
+{"id": 301, "cat": "win_text", "q": "อยากเปิดไฟล์ script.sh ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 302, "cat": "win_text", "q": "อยากแก้ไขไฟล์ music.mp3 ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 303, "cat": "win_text", "q": "อยากดูเนื้อหาไฟล์ config.json", "hints": ["cat|less|head"]}
+{"id": 304, "cat": "win_zip", "q": "อยากบีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 305, "cat": "win_zip", "q": "อยากแตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 306, "cat": "win_zip", "q": "อยากแตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 307, "cat": "win_user", "q": "อยากเปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 308, "cat": "win_user", "q": "อยากดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 309, "cat": "win_user", "q": "อยากสลับ user", "hints": ["su |sudo -u"]}
+{"id": 310, "cat": "win_git", "q": "อยากโหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 311, "cat": "win_git", "q": "อยากดูสถานะ git", "hints": ["git status"]}
+{"id": 312, "cat": "win_misc", "q": "อยากเครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 313, "cat": "win_misc", "q": "อยากดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 314, "cat": "win_misc", "q": "อยากเปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 315, "cat": "win_misc", "q": "อยากคำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 316, "cat": "win_misc", "q": "อยากจอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 317, "cat": "win_misc", "q": "อยากBlue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 318, "cat": "win_misc", "q": "อยากRegistry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 319, "cat": "win_misc", "q": "อยากControl Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 320, "cat": "win_misc", "q": "อยากDevice Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 321, "cat": "win_misc", "q": "อยากPrint Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 322, "cat": "win_misc", "q": "อยากเปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 323, "cat": "win_misc", "q": "อยากเช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 324, "cat": "win_misc", "q": "อยากBluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 325, "cat": "win_misc", "q": "อยากต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 326, "cat": "win_thai", "q": "อยากจะลงโปรแกรม python ยังไง", "hints": ["apt|install|snap"]}
+{"id": 327, "cat": "win_thai", "q": "อยากขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 328, "cat": "win_thai", "q": "อยากไปที่โฟลเดอร์ work", "hints": ["cd"]}
+{"id": 329, "cat": "win_thai", "q": "อยากอยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 330, "cat": "win_thai", "q": "อยากค้นหาคำว่า import ในไฟล์", "hints": ["grep|rg"]}
+{"id": 331, "cat": "win_thai", "q": "อยากดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 332, "cat": "win_thai", "q": "อยากเช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 333, "cat": "win_thai", "q": "อยากลบทุกอย่างในโฟลเดอร์ Pictures", "hints": ["rm"]}
+{"id": 334, "cat": "win_thai", "q": "อยากสำเนาโฟลเดอร์ project ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 335, "cat": "win_thai", "q": "อยากเปิดเว็บ google.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 336, "cat": "win_thai", "q": "อยากดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 337, "cat": "win_thai", "q": "อยากเช็คว่า java ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 338, "cat": "win_thai", "q": "อยากรันสคริปต์ data.txt.sh", "hints": ["bash|chmod|./"]}
+{"id": 339, "cat": "win_thai", "q": "อยากทำไมคำสั่ง chrome ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 340, "cat": "win_thai", "q": "อยากจะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 341, "cat": "win_thai", "q": "อยากDesktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 342, "cat": "win_thai", "q": "อยากDownloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 343, "cat": "win_thai", "q": "อยากDocuments โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 344, "cat": "win_vague", "q": "อยากทำยังไง", "hints": []}
+{"id": 345, "cat": "win_vague", "q": "อยากช่วยหน่อย", "hints": []}
+{"id": 346, "cat": "win_vague", "q": "อยากมันไม่ work", "hints": []}
+{"id": 347, "cat": "win_vague", "q": "อยากพังหมดเลย", "hints": []}
+{"id": 348, "cat": "win_vague", "q": "อยากปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 349, "cat": "win_vague", "q": "อยากลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 350, "cat": "win_vague", "q": "อยากแก้ให้หน่อย", "hints": []}
+{"id": 351, "cat": "win_vague", "q": "อยากรันให้หน่อย", "hints": []}
+{"id": 352, "cat": "win_file", "q": "จะจะคัดลอกไฟล์ script.sh ไปโฟลเดอร์ backup ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 353, "cat": "win_file", "q": "จะอยาก copy ไฟล์ resume.docx เหมือนใน Windows", "hints": ["cp"]}
+{"id": 354, "cat": "win_file", "q": "จะย้ายไฟล์ report.pdf ไป project", "hints": ["mv"]}
+{"id": 355, "cat": "win_file", "q": "จะลบไฟล์ photo.jpg ทิ้ง", "hints": ["rm"]}
+{"id": 356, "cat": "win_file", "q": "จะถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 357, "cat": "win_file", "q": "จะเปิดโฟลเดอร์ work ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 358, "cat": "win_file", "q": "จะหาไฟล์ชื่อ config.json ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 359, "cat": "win_file", "q": "จะแสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 360, "cat": "win_file", "q": "จะเปลี่ยนชื่อไฟล์ backup.zip เป็น photo.jpg", "hints": ["mv"]}
+{"id": 361, "cat": "win_file", "q": "จะสร้างโฟลเดอร์ใหม่ชื่อ Desktop", "hints": ["mkdir"]}
+{"id": 362, "cat": "win_disk", "q": "จะไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 363, "cat": "win_disk", "q": "จะเช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 364, "cat": "win_disk", "q": "จะดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 365, "cat": "win_disk", "q": "จะทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 366, "cat": "win_disk", "q": "จะดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 367, "cat": "win_proc", "q": "จะเปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 368, "cat": "win_proc", "q": "จะดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 369, "cat": "win_proc", "q": "จะปิดโปรแกรม python ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 370, "cat": "win_proc", "q": "จะดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 371, "cat": "win_proc", "q": "จะรีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 372, "cat": "win_proc", "q": "จะปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 373, "cat": "win_proc", "q": "จะเครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 374, "cat": "win_net", "q": "จะเช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 375, "cat": "win_net", "q": "จะดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 376, "cat": "win_net", "q": "จะping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 377, "cat": "win_net", "q": "จะดูว่า port 80 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 378, "cat": "win_pkg", "q": "จะติดตั้งโปรแกรม code เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 379, "cat": "win_pkg", "q": "จะถอนโปรแกรม spotify ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 380, "cat": "win_pkg", "q": "จะดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 381, "cat": "win_pkg", "q": "จะอัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 382, "cat": "win_perm", "q": "จะรันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 383, "cat": "win_perm", "q": "จะไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 384, "cat": "win_perm", "q": "จะเปลี่ยนสิทธิ์ไฟล์ data.txt ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 385, "cat": "win_perm", "q": "จะไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 386, "cat": "win_env", "q": "จะตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 387, "cat": "win_env", "q": "จะดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 388, "cat": "win_env", "q": "จะตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 389, "cat": "win_text", "q": "จะเปิดไฟล์ config.json ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 390, "cat": "win_text", "q": "จะแก้ไขไฟล์ app.deb ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 391, "cat": "win_text", "q": "จะดูเนื้อหาไฟล์ script.sh", "hints": ["cat|less|head"]}
+{"id": 392, "cat": "win_zip", "q": "จะบีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 393, "cat": "win_zip", "q": "จะแตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 394, "cat": "win_zip", "q": "จะแตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 395, "cat": "win_user", "q": "จะเปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 396, "cat": "win_user", "q": "จะดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 397, "cat": "win_user", "q": "จะสลับ user", "hints": ["su |sudo -u"]}
+{"id": 398, "cat": "win_git", "q": "จะโหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 399, "cat": "win_git", "q": "จะดูสถานะ git", "hints": ["git status"]}
+{"id": 400, "cat": "win_misc", "q": "จะเครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 401, "cat": "win_misc", "q": "จะดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 402, "cat": "win_misc", "q": "จะเปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 403, "cat": "win_misc", "q": "จะคำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 404, "cat": "win_misc", "q": "จะจอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 405, "cat": "win_misc", "q": "จะBlue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 406, "cat": "win_misc", "q": "จะRegistry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 407, "cat": "win_misc", "q": "จะControl Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 408, "cat": "win_misc", "q": "จะDevice Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 409, "cat": "win_misc", "q": "จะPrint Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 410, "cat": "win_misc", "q": "จะเปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 411, "cat": "win_misc", "q": "จะเช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 412, "cat": "win_misc", "q": "จะBluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 413, "cat": "win_misc", "q": "จะต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 414, "cat": "win_thai", "q": "จะจะลงโปรแกรม code ยังไง", "hints": ["apt|install|snap"]}
+{"id": 415, "cat": "win_thai", "q": "จะขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 416, "cat": "win_thai", "q": "จะไปที่โฟลเดอร์ src", "hints": ["cd"]}
+{"id": 417, "cat": "win_thai", "q": "จะอยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 418, "cat": "win_thai", "q": "จะค้นหาคำว่า error ในไฟล์", "hints": ["grep|rg"]}
+{"id": 419, "cat": "win_thai", "q": "จะดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 420, "cat": "win_thai", "q": "จะเช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 421, "cat": "win_thai", "q": "จะลบทุกอย่างในโฟลเดอร์ home", "hints": ["rm"]}
+{"id": 422, "cat": "win_thai", "q": "จะสำเนาโฟลเดอร์ home ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 423, "cat": "win_thai", "q": "จะเปิดเว็บ example.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 424, "cat": "win_thai", "q": "จะดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 425, "cat": "win_thai", "q": "จะเช็คว่า firefox ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 426, "cat": "win_thai", "q": "จะรันสคริปต์ script.sh.sh", "hints": ["bash|chmod|./"]}
+{"id": 427, "cat": "win_thai", "q": "จะทำไมคำสั่ง code ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 428, "cat": "win_thai", "q": "จะจะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 429, "cat": "win_thai", "q": "จะDesktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 430, "cat": "win_thai", "q": "จะDownloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 431, "cat": "win_thai", "q": "จะDocuments โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 432, "cat": "win_vague", "q": "จะทำยังไง", "hints": []}
+{"id": 433, "cat": "win_vague", "q": "จะช่วยหน่อย", "hints": []}
+{"id": 434, "cat": "win_vague", "q": "จะมันไม่ work", "hints": []}
+{"id": 435, "cat": "win_vague", "q": "จะพังหมดเลย", "hints": []}
+{"id": 436, "cat": "win_vague", "q": "จะปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 437, "cat": "win_vague", "q": "จะลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 438, "cat": "win_vague", "q": "จะแก้ให้หน่อย", "hints": []}
+{"id": 439, "cat": "win_vague", "q": "จะรันให้หน่อย", "hints": []}
+{"id": 440, "cat": "win_file", "q": "ยังไงจะคัดลอกไฟล์ notes.md ไปโฟลเดอร์ temp ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 441, "cat": "win_file", "q": "ยังไงอยาก copy ไฟล์ notes.md เหมือนใน Windows", "hints": ["cp"]}
+{"id": 442, "cat": "win_file", "q": "ยังไงย้ายไฟล์ app.deb ไป src", "hints": ["mv"]}
+{"id": 443, "cat": "win_file", "q": "ยังไงลบไฟล์ data.txt ทิ้ง", "hints": ["rm"]}
+{"id": 444, "cat": "win_file", "q": "ยังไงถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 445, "cat": "win_file", "q": "ยังไงเปิดโฟลเดอร์ backup ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 446, "cat": "win_file", "q": "ยังไงหาไฟล์ชื่อ photo.jpg ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 447, "cat": "win_file", "q": "ยังไงแสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 448, "cat": "win_file", "q": "ยังไงเปลี่ยนชื่อไฟล์ backup.zip เป็น app.deb", "hints": ["mv"]}
+{"id": 449, "cat": "win_file", "q": "ยังไงสร้างโฟลเดอร์ใหม่ชื่อ src", "hints": ["mkdir"]}
+{"id": 450, "cat": "win_disk", "q": "ยังไงไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 451, "cat": "win_disk", "q": "ยังไงเช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 452, "cat": "win_disk", "q": "ยังไงดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 453, "cat": "win_disk", "q": "ยังไงทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 454, "cat": "win_disk", "q": "ยังไงดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 455, "cat": "win_proc", "q": "ยังไงเปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 456, "cat": "win_proc", "q": "ยังไงดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 457, "cat": "win_proc", "q": "ยังไงปิดโปรแกรม nginx ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 458, "cat": "win_proc", "q": "ยังไงดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 459, "cat": "win_proc", "q": "ยังไงรีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 460, "cat": "win_proc", "q": "ยังไงปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 461, "cat": "win_proc", "q": "ยังไงเครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 462, "cat": "win_net", "q": "ยังไงเช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 463, "cat": "win_net", "q": "ยังไงดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 464, "cat": "win_net", "q": "ยังไงping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 465, "cat": "win_net", "q": "ยังไงดูว่า port 443 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 466, "cat": "win_pkg", "q": "ยังไงติดตั้งโปรแกรม firefox เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 467, "cat": "win_pkg", "q": "ยังไงถอนโปรแกรม node ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 468, "cat": "win_pkg", "q": "ยังไงดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 469, "cat": "win_pkg", "q": "ยังไงอัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 470, "cat": "win_perm", "q": "ยังไงรันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 471, "cat": "win_perm", "q": "ยังไงไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 472, "cat": "win_perm", "q": "ยังไงเปลี่ยนสิทธิ์ไฟล์ resume.docx ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 473, "cat": "win_perm", "q": "ยังไงไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 474, "cat": "win_env", "q": "ยังไงตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 475, "cat": "win_env", "q": "ยังไงดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 476, "cat": "win_env", "q": "ยังไงตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 477, "cat": "win_text", "q": "ยังไงเปิดไฟล์ app.deb ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 478, "cat": "win_text", "q": "ยังไงแก้ไขไฟล์ report.pdf ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 479, "cat": "win_text", "q": "ยังไงดูเนื้อหาไฟล์ photo.jpg", "hints": ["cat|less|head"]}
+{"id": 480, "cat": "win_zip", "q": "ยังไงบีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 481, "cat": "win_zip", "q": "ยังไงแตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 482, "cat": "win_zip", "q": "ยังไงแตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 483, "cat": "win_user", "q": "ยังไงเปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 484, "cat": "win_user", "q": "ยังไงดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 485, "cat": "win_user", "q": "ยังไงสลับ user", "hints": ["su |sudo -u"]}
+{"id": 486, "cat": "win_git", "q": "ยังไงโหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 487, "cat": "win_git", "q": "ยังไงดูสถานะ git", "hints": ["git status"]}
+{"id": 488, "cat": "win_misc", "q": "ยังไงเครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 489, "cat": "win_misc", "q": "ยังไงดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 490, "cat": "win_misc", "q": "ยังไงเปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 491, "cat": "win_misc", "q": "ยังไงคำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 492, "cat": "win_misc", "q": "ยังไงจอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 493, "cat": "win_misc", "q": "ยังไงBlue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 494, "cat": "win_misc", "q": "ยังไงRegistry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 495, "cat": "win_misc", "q": "ยังไงControl Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 496, "cat": "win_misc", "q": "ยังไงDevice Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 497, "cat": "win_misc", "q": "ยังไงPrint Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 498, "cat": "win_misc", "q": "ยังไงเปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 499, "cat": "win_misc", "q": "ยังไงเช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 500, "cat": "win_misc", "q": "ยังไงBluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 501, "cat": "win_misc", "q": "ยังไงต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 502, "cat": "win_thai", "q": "ยังไงจะลงโปรแกรม ollama ยังไง", "hints": ["apt|install|snap"]}
+{"id": 503, "cat": "win_thai", "q": "ยังไงขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 504, "cat": "win_thai", "q": "ยังไงไปที่โฟลเดอร์ temp", "hints": ["cd"]}
+{"id": 505, "cat": "win_thai", "q": "ยังไงอยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 506, "cat": "win_thai", "q": "ยังไงค้นหาคำว่า function ในไฟล์", "hints": ["grep|rg"]}
+{"id": 507, "cat": "win_thai", "q": "ยังไงดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 508, "cat": "win_thai", "q": "ยังไงเช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 509, "cat": "win_thai", "q": "ยังไงลบทุกอย่างในโฟลเดอร์ Desktop", "hints": ["rm"]}
+{"id": 510, "cat": "win_thai", "q": "ยังไงสำเนาโฟลเดอร์ home ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 511, "cat": "win_thai", "q": "ยังไงเปิดเว็บ github.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 512, "cat": "win_thai", "q": "ยังไงดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 513, "cat": "win_thai", "q": "ยังไงเช็คว่า node ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 514, "cat": "win_thai", "q": "ยังไงรันสคริปต์ backup.zip.sh", "hints": ["bash|chmod|./"]}
+{"id": 515, "cat": "win_thai", "q": "ยังไงทำไมคำสั่ง java ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 516, "cat": "win_thai", "q": "ยังไงจะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 517, "cat": "win_thai", "q": "ยังไงDesktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 518, "cat": "win_thai", "q": "ยังไงDownloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 519, "cat": "win_thai", "q": "ยังไงDocuments โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 520, "cat": "win_vague", "q": "ยังไงทำยังไง", "hints": []}
+{"id": 521, "cat": "win_vague", "q": "ยังไงช่วยหน่อย", "hints": []}
+{"id": 522, "cat": "win_vague", "q": "ยังไงมันไม่ work", "hints": []}
+{"id": 523, "cat": "win_vague", "q": "ยังไงพังหมดเลย", "hints": []}
+{"id": 524, "cat": "win_vague", "q": "ยังไงปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 525, "cat": "win_vague", "q": "ยังไงลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 526, "cat": "win_vague", "q": "ยังไงแก้ให้หน่อย", "hints": []}
+{"id": 527, "cat": "win_vague", "q": "ยังไงรันให้หน่อย", "hints": []}
+{"id": 528, "cat": "win_file", "q": "ทำไมจะคัดลอกไฟล์ photo.jpg ไปโฟลเดอร์ Desktop ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 529, "cat": "win_file", "q": "ทำไมอยาก copy ไฟล์ data.txt เหมือนใน Windows", "hints": ["cp"]}
+{"id": 530, "cat": "win_file", "q": "ทำไมย้ายไฟล์ script.sh ไป project", "hints": ["mv"]}
+{"id": 531, "cat": "win_file", "q": "ทำไมลบไฟล์ config.json ทิ้ง", "hints": ["rm"]}
+{"id": 532, "cat": "win_file", "q": "ทำไมถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 533, "cat": "win_file", "q": "ทำไมเปิดโฟลเดอร์ temp ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 534, "cat": "win_file", "q": "ทำไมหาไฟล์ชื่อ app.deb ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 535, "cat": "win_file", "q": "ทำไมแสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 536, "cat": "win_file", "q": "ทำไมเปลี่ยนชื่อไฟล์ config.json เป็น data.txt", "hints": ["mv"]}
+{"id": 537, "cat": "win_file", "q": "ทำไมสร้างโฟลเดอร์ใหม่ชื่อ src", "hints": ["mkdir"]}
+{"id": 538, "cat": "win_disk", "q": "ทำไมไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 539, "cat": "win_disk", "q": "ทำไมเช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 540, "cat": "win_disk", "q": "ทำไมดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 541, "cat": "win_disk", "q": "ทำไมทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 542, "cat": "win_disk", "q": "ทำไมดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 543, "cat": "win_proc", "q": "ทำไมเปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 544, "cat": "win_proc", "q": "ทำไมดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 545, "cat": "win_proc", "q": "ทำไมปิดโปรแกรม java ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 546, "cat": "win_proc", "q": "ทำไมดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 547, "cat": "win_proc", "q": "ทำไมรีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 548, "cat": "win_proc", "q": "ทำไมปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 549, "cat": "win_proc", "q": "ทำไมเครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 550, "cat": "win_net", "q": "ทำไมเช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 551, "cat": "win_net", "q": "ทำไมดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 552, "cat": "win_net", "q": "ทำไมping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 553, "cat": "win_net", "q": "ทำไมดูว่า port 8080 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 554, "cat": "win_pkg", "q": "ทำไมติดตั้งโปรแกรม node เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 555, "cat": "win_pkg", "q": "ทำไมถอนโปรแกรม code ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 556, "cat": "win_pkg", "q": "ทำไมดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 557, "cat": "win_pkg", "q": "ทำไมอัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 558, "cat": "win_perm", "q": "ทำไมรันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 559, "cat": "win_perm", "q": "ทำไมไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 560, "cat": "win_perm", "q": "ทำไมเปลี่ยนสิทธิ์ไฟล์ music.mp3 ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 561, "cat": "win_perm", "q": "ทำไมไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 562, "cat": "win_env", "q": "ทำไมตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 563, "cat": "win_env", "q": "ทำไมดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 564, "cat": "win_env", "q": "ทำไมตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 565, "cat": "win_text", "q": "ทำไมเปิดไฟล์ photo.jpg ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 566, "cat": "win_text", "q": "ทำไมแก้ไขไฟล์ data.txt ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 567, "cat": "win_text", "q": "ทำไมดูเนื้อหาไฟล์ app.deb", "hints": ["cat|less|head"]}
+{"id": 568, "cat": "win_zip", "q": "ทำไมบีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 569, "cat": "win_zip", "q": "ทำไมแตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 570, "cat": "win_zip", "q": "ทำไมแตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 571, "cat": "win_user", "q": "ทำไมเปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 572, "cat": "win_user", "q": "ทำไมดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 573, "cat": "win_user", "q": "ทำไมสลับ user", "hints": ["su |sudo -u"]}
+{"id": 574, "cat": "win_git", "q": "ทำไมโหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 575, "cat": "win_git", "q": "ทำไมดูสถานะ git", "hints": ["git status"]}
+{"id": 576, "cat": "win_misc", "q": "ทำไมเครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 577, "cat": "win_misc", "q": "ทำไมดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 578, "cat": "win_misc", "q": "ทำไมเปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 579, "cat": "win_misc", "q": "ทำไมคำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 580, "cat": "win_misc", "q": "ทำไมจอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 581, "cat": "win_misc", "q": "ทำไมBlue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 582, "cat": "win_misc", "q": "ทำไมRegistry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 583, "cat": "win_misc", "q": "ทำไมControl Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 584, "cat": "win_misc", "q": "ทำไมDevice Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 585, "cat": "win_misc", "q": "ทำไมPrint Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 586, "cat": "win_misc", "q": "ทำไมเปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 587, "cat": "win_misc", "q": "ทำไมเช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 588, "cat": "win_misc", "q": "ทำไมBluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 589, "cat": "win_misc", "q": "ทำไมต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 590, "cat": "win_thai", "q": "ทำไมจะลงโปรแกรม chrome ยังไง", "hints": ["apt|install|snap"]}
+{"id": 591, "cat": "win_thai", "q": "ทำไมขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 592, "cat": "win_thai", "q": "ทำไมไปที่โฟลเดอร์ Desktop", "hints": ["cd"]}
+{"id": 593, "cat": "win_thai", "q": "ทำไมอยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 594, "cat": "win_thai", "q": "ทำไมค้นหาคำว่า import ในไฟล์", "hints": ["grep|rg"]}
+{"id": 595, "cat": "win_thai", "q": "ทำไมดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 596, "cat": "win_thai", "q": "ทำไมเช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 597, "cat": "win_thai", "q": "ทำไมลบทุกอย่างในโฟลเดอร์ Downloads", "hints": ["rm"]}
+{"id": 598, "cat": "win_thai", "q": "ทำไมสำเนาโฟลเดอร์ Downloads ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 599, "cat": "win_thai", "q": "ทำไมเปิดเว็บ example.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 600, "cat": "win_thai", "q": "ทำไมดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 601, "cat": "win_thai", "q": "ทำไมเช็คว่า docker ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 602, "cat": "win_thai", "q": "ทำไมรันสคริปต์ backup.zip.sh", "hints": ["bash|chmod|./"]}
+{"id": 603, "cat": "win_thai", "q": "ทำไมทำไมคำสั่ง firefox ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 604, "cat": "win_thai", "q": "ทำไมจะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 605, "cat": "win_thai", "q": "ทำไมDesktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 606, "cat": "win_thai", "q": "ทำไมDownloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 607, "cat": "win_thai", "q": "ทำไมDocuments โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 608, "cat": "win_vague", "q": "ทำไมทำยังไง", "hints": []}
+{"id": 609, "cat": "win_vague", "q": "ทำไมช่วยหน่อย", "hints": []}
+{"id": 610, "cat": "win_vague", "q": "ทำไมมันไม่ work", "hints": []}
+{"id": 611, "cat": "win_vague", "q": "ทำไมพังหมดเลย", "hints": []}
+{"id": 612, "cat": "win_vague", "q": "ทำไมปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 613, "cat": "win_vague", "q": "ทำไมลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 614, "cat": "win_vague", "q": "ทำไมแก้ให้หน่อย", "hints": []}
+{"id": 615, "cat": "win_vague", "q": "ทำไมรันให้หน่อย", "hints": []}
+{"id": 616, "cat": "win_file", "q": "please จะคัดลอกไฟล์ data.txt ไปโฟลเดอร์ Documents ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 617, "cat": "win_file", "q": "please อยาก copy ไฟล์ config.json เหมือนใน Windows", "hints": ["cp"]}
+{"id": 618, "cat": "win_file", "q": "please ย้ายไฟล์ report.pdf ไป project", "hints": ["mv"]}
+{"id": 619, "cat": "win_file", "q": "please ลบไฟล์ data.txt ทิ้ง", "hints": ["rm"]}
+{"id": 620, "cat": "win_file", "q": "please ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 621, "cat": "win_file", "q": "please เปิดโฟลเดอร์ src ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 622, "cat": "win_file", "q": "please หาไฟล์ชื่อ notes.md ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 623, "cat": "win_file", "q": "please แสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 624, "cat": "win_file", "q": "please เปลี่ยนชื่อไฟล์ backup.zip เป็น music.mp3", "hints": ["mv"]}
+{"id": 625, "cat": "win_file", "q": "please สร้างโฟลเดอร์ใหม่ชื่อ temp", "hints": ["mkdir"]}
+{"id": 626, "cat": "win_disk", "q": "please ไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 627, "cat": "win_disk", "q": "please เช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 628, "cat": "win_disk", "q": "please ดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 629, "cat": "win_disk", "q": "please ทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 630, "cat": "win_disk", "q": "please ดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 631, "cat": "win_proc", "q": "please เปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 632, "cat": "win_proc", "q": "please ดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 633, "cat": "win_proc", "q": "please ปิดโปรแกรม nginx ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 634, "cat": "win_proc", "q": "please ดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 635, "cat": "win_proc", "q": "please รีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 636, "cat": "win_proc", "q": "please ปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 637, "cat": "win_proc", "q": "please เครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 638, "cat": "win_net", "q": "please เช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 639, "cat": "win_net", "q": "please ดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 640, "cat": "win_net", "q": "please ping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 641, "cat": "win_net", "q": "please ดูว่า port 443 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 642, "cat": "win_pkg", "q": "please ติดตั้งโปรแกรม java เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 643, "cat": "win_pkg", "q": "please ถอนโปรแกรม chrome ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 644, "cat": "win_pkg", "q": "please ดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 645, "cat": "win_pkg", "q": "please อัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 646, "cat": "win_perm", "q": "please รันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 647, "cat": "win_perm", "q": "please ไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 648, "cat": "win_perm", "q": "please เปลี่ยนสิทธิ์ไฟล์ resume.docx ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 649, "cat": "win_perm", "q": "please ไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 650, "cat": "win_env", "q": "please ตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 651, "cat": "win_env", "q": "please ดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 652, "cat": "win_env", "q": "please ตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 653, "cat": "win_text", "q": "please เปิดไฟล์ resume.docx ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 654, "cat": "win_text", "q": "please แก้ไขไฟล์ data.txt ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 655, "cat": "win_text", "q": "please ดูเนื้อหาไฟล์ data.txt", "hints": ["cat|less|head"]}
+{"id": 656, "cat": "win_zip", "q": "please บีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 657, "cat": "win_zip", "q": "please แตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 658, "cat": "win_zip", "q": "please แตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 659, "cat": "win_user", "q": "please เปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 660, "cat": "win_user", "q": "please ดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 661, "cat": "win_user", "q": "please สลับ user", "hints": ["su |sudo -u"]}
+{"id": 662, "cat": "win_git", "q": "please โหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 663, "cat": "win_git", "q": "please ดูสถานะ git", "hints": ["git status"]}
+{"id": 664, "cat": "win_misc", "q": "please เครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 665, "cat": "win_misc", "q": "please ดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 666, "cat": "win_misc", "q": "please เปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 667, "cat": "win_misc", "q": "please คำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 668, "cat": "win_misc", "q": "please จอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 669, "cat": "win_misc", "q": "please Blue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 670, "cat": "win_misc", "q": "please Registry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 671, "cat": "win_misc", "q": "please Control Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 672, "cat": "win_misc", "q": "please Device Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 673, "cat": "win_misc", "q": "please Print Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 674, "cat": "win_misc", "q": "please เปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 675, "cat": "win_misc", "q": "please เช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 676, "cat": "win_misc", "q": "please Bluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 677, "cat": "win_misc", "q": "please ต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 678, "cat": "win_thai", "q": "please จะลงโปรแกรม spotify ยังไง", "hints": ["apt|install|snap"]}
+{"id": 679, "cat": "win_thai", "q": "please ขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 680, "cat": "win_thai", "q": "please ไปที่โฟลเดอร์ Downloads", "hints": ["cd"]}
+{"id": 681, "cat": "win_thai", "q": "please อยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 682, "cat": "win_thai", "q": "please ค้นหาคำว่า password ในไฟล์", "hints": ["grep|rg"]}
+{"id": 683, "cat": "win_thai", "q": "please ดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 684, "cat": "win_thai", "q": "please เช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 685, "cat": "win_thai", "q": "please ลบทุกอย่างในโฟลเดอร์ home", "hints": ["rm"]}
+{"id": 686, "cat": "win_thai", "q": "please สำเนาโฟลเดอร์ work ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 687, "cat": "win_thai", "q": "please เปิดเว็บ google.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 688, "cat": "win_thai", "q": "please ดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 689, "cat": "win_thai", "q": "please เช็คว่า chrome ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 690, "cat": "win_thai", "q": "please รันสคริปต์ photo.jpg.sh", "hints": ["bash|chmod|./"]}
+{"id": 691, "cat": "win_thai", "q": "please ทำไมคำสั่ง java ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 692, "cat": "win_thai", "q": "please จะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 693, "cat": "win_thai", "q": "please Desktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 694, "cat": "win_thai", "q": "please Downloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 695, "cat": "win_thai", "q": "please Documents โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 696, "cat": "win_vague", "q": "please ทำยังไง", "hints": []}
+{"id": 697, "cat": "win_vague", "q": "please ช่วยหน่อย", "hints": []}
+{"id": 698, "cat": "win_vague", "q": "please มันไม่ work", "hints": []}
+{"id": 699, "cat": "win_vague", "q": "please พังหมดเลย", "hints": []}
+{"id": 700, "cat": "win_vague", "q": "please ปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 701, "cat": "win_vague", "q": "please ลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 702, "cat": "win_vague", "q": "please แก้ให้หน่อย", "hints": []}
+{"id": 703, "cat": "win_vague", "q": "please รันให้หน่อย", "hints": []}
+{"id": 704, "cat": "win_file", "q": "ใน linux จะคัดลอกไฟล์ music.mp3 ไปโฟลเดอร์ Downloads ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 705, "cat": "win_file", "q": "ใน linux อยาก copy ไฟล์ config.json เหมือนใน Windows", "hints": ["cp"]}
+{"id": 706, "cat": "win_file", "q": "ใน linux ย้ายไฟล์ photo.jpg ไป backup", "hints": ["mv"]}
+{"id": 707, "cat": "win_file", "q": "ใน linux ลบไฟล์ backup.zip ทิ้ง", "hints": ["rm"]}
+{"id": 708, "cat": "win_file", "q": "ใน linux ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 709, "cat": "win_file", "q": "ใน linux เปิดโฟลเดอร์ backup ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 710, "cat": "win_file", "q": "ใน linux หาไฟล์ชื่อ notes.md ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 711, "cat": "win_file", "q": "ใน linux แสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 712, "cat": "win_file", "q": "ใน linux เปลี่ยนชื่อไฟล์ data.txt เป็น notes.md", "hints": ["mv"]}
+{"id": 713, "cat": "win_file", "q": "ใน linux สร้างโฟลเดอร์ใหม่ชื่อ backup", "hints": ["mkdir"]}
+{"id": 714, "cat": "win_disk", "q": "ใน linux ไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 715, "cat": "win_disk", "q": "ใน linux เช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 716, "cat": "win_disk", "q": "ใน linux ดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 717, "cat": "win_disk", "q": "ใน linux ทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 718, "cat": "win_disk", "q": "ใน linux ดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 719, "cat": "win_proc", "q": "ใน linux เปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 720, "cat": "win_proc", "q": "ใน linux ดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 721, "cat": "win_proc", "q": "ใน linux ปิดโปรแกรม firefox ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 722, "cat": "win_proc", "q": "ใน linux ดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 723, "cat": "win_proc", "q": "ใน linux รีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 724, "cat": "win_proc", "q": "ใน linux ปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 725, "cat": "win_proc", "q": "ใน linux เครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 726, "cat": "win_net", "q": "ใน linux เช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 727, "cat": "win_net", "q": "ใน linux ดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 728, "cat": "win_net", "q": "ใน linux ping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 729, "cat": "win_net", "q": "ใน linux ดูว่า port 22 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 730, "cat": "win_pkg", "q": "ใน linux ติดตั้งโปรแกรม chrome เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 731, "cat": "win_pkg", "q": "ใน linux ถอนโปรแกรม docker ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 732, "cat": "win_pkg", "q": "ใน linux ดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 733, "cat": "win_pkg", "q": "ใน linux อัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 734, "cat": "win_perm", "q": "ใน linux รันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 735, "cat": "win_perm", "q": "ใน linux ไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 736, "cat": "win_perm", "q": "ใน linux เปลี่ยนสิทธิ์ไฟล์ report.pdf ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 737, "cat": "win_perm", "q": "ใน linux ไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 738, "cat": "win_env", "q": "ใน linux ตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 739, "cat": "win_env", "q": "ใน linux ดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 740, "cat": "win_env", "q": "ใน linux ตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 741, "cat": "win_text", "q": "ใน linux เปิดไฟล์ notes.md ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 742, "cat": "win_text", "q": "ใน linux แก้ไขไฟล์ music.mp3 ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 743, "cat": "win_text", "q": "ใน linux ดูเนื้อหาไฟล์ notes.md", "hints": ["cat|less|head"]}
+{"id": 744, "cat": "win_zip", "q": "ใน linux บีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 745, "cat": "win_zip", "q": "ใน linux แตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 746, "cat": "win_zip", "q": "ใน linux แตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 747, "cat": "win_user", "q": "ใน linux เปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 748, "cat": "win_user", "q": "ใน linux ดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 749, "cat": "win_user", "q": "ใน linux สลับ user", "hints": ["su |sudo -u"]}
+{"id": 750, "cat": "win_git", "q": "ใน linux โหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 751, "cat": "win_git", "q": "ใน linux ดูสถานะ git", "hints": ["git status"]}
+{"id": 752, "cat": "win_misc", "q": "ใน linux เครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 753, "cat": "win_misc", "q": "ใน linux ดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 754, "cat": "win_misc", "q": "ใน linux เปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 755, "cat": "win_misc", "q": "ใน linux คำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 756, "cat": "win_misc", "q": "ใน linux จอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 757, "cat": "win_misc", "q": "ใน linux Blue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 758, "cat": "win_misc", "q": "ใน linux Registry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 759, "cat": "win_misc", "q": "ใน linux Control Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 760, "cat": "win_misc", "q": "ใน linux Device Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 761, "cat": "win_misc", "q": "ใน linux Print Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 762, "cat": "win_misc", "q": "ใน linux เปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 763, "cat": "win_misc", "q": "ใน linux เช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 764, "cat": "win_misc", "q": "ใน linux Bluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 765, "cat": "win_misc", "q": "ใน linux ต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 766, "cat": "win_thai", "q": "ใน linux จะลงโปรแกรม node ยังไง", "hints": ["apt|install|snap"]}
+{"id": 767, "cat": "win_thai", "q": "ใน linux ขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 768, "cat": "win_thai", "q": "ใน linux ไปที่โฟลเดอร์ Desktop", "hints": ["cd"]}
+{"id": 769, "cat": "win_thai", "q": "ใน linux อยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 770, "cat": "win_thai", "q": "ใน linux ค้นหาคำว่า password ในไฟล์", "hints": ["grep|rg"]}
+{"id": 771, "cat": "win_thai", "q": "ใน linux ดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 772, "cat": "win_thai", "q": "ใน linux เช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 773, "cat": "win_thai", "q": "ใน linux ลบทุกอย่างในโฟลเดอร์ Desktop", "hints": ["rm"]}
+{"id": 774, "cat": "win_thai", "q": "ใน linux สำเนาโฟลเดอร์ temp ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 775, "cat": "win_thai", "q": "ใน linux เปิดเว็บ example.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 776, "cat": "win_thai", "q": "ใน linux ดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 777, "cat": "win_thai", "q": "ใน linux เช็คว่า nginx ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 778, "cat": "win_thai", "q": "ใน linux รันสคริปต์ script.sh.sh", "hints": ["bash|chmod|./"]}
+{"id": 779, "cat": "win_thai", "q": "ใน linux ทำไมคำสั่ง docker ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 780, "cat": "win_thai", "q": "ใน linux จะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 781, "cat": "win_thai", "q": "ใน linux Desktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 782, "cat": "win_thai", "q": "ใน linux Downloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 783, "cat": "win_thai", "q": "ใน linux Documents โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 784, "cat": "win_vague", "q": "ใน linux ทำยังไง", "hints": []}
+{"id": 785, "cat": "win_vague", "q": "ใน linux ช่วยหน่อย", "hints": []}
+{"id": 786, "cat": "win_vague", "q": "ใน linux มันไม่ work", "hints": []}
+{"id": 787, "cat": "win_vague", "q": "ใน linux พังหมดเลย", "hints": []}
+{"id": 788, "cat": "win_vague", "q": "ใน linux ปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 789, "cat": "win_vague", "q": "ใน linux ลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 790, "cat": "win_vague", "q": "ใน linux แก้ให้หน่อย", "hints": []}
+{"id": 791, "cat": "win_vague", "q": "ใน linux รันให้หน่อย", "hints": []}
+{"id": 792, "cat": "win_file", "q": "บน ubuntu จะคัดลอกไฟล์ config.json ไปโฟลเดอร์ Pictures ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 793, "cat": "win_file", "q": "บน ubuntu อยาก copy ไฟล์ app.deb เหมือนใน Windows", "hints": ["cp"]}
+{"id": 794, "cat": "win_file", "q": "บน ubuntu ย้ายไฟล์ music.mp3 ไป home", "hints": ["mv"]}
+{"id": 795, "cat": "win_file", "q": "บน ubuntu ลบไฟล์ notes.md ทิ้ง", "hints": ["rm"]}
+{"id": 796, "cat": "win_file", "q": "บน ubuntu ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 797, "cat": "win_file", "q": "บน ubuntu เปิดโฟลเดอร์ project ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 798, "cat": "win_file", "q": "บน ubuntu หาไฟล์ชื่อ script.sh ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 799, "cat": "win_file", "q": "บน ubuntu แสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 800, "cat": "win_file", "q": "บน ubuntu เปลี่ยนชื่อไฟล์ photo.jpg เป็น notes.md", "hints": ["mv"]}
+{"id": 801, "cat": "win_file", "q": "บน ubuntu สร้างโฟลเดอร์ใหม่ชื่อ Desktop", "hints": ["mkdir"]}
+{"id": 802, "cat": "win_disk", "q": "บน ubuntu ไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 803, "cat": "win_disk", "q": "บน ubuntu เช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 804, "cat": "win_disk", "q": "บน ubuntu ดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 805, "cat": "win_disk", "q": "บน ubuntu ทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 806, "cat": "win_disk", "q": "บน ubuntu ดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 807, "cat": "win_proc", "q": "บน ubuntu เปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 808, "cat": "win_proc", "q": "บน ubuntu ดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 809, "cat": "win_proc", "q": "บน ubuntu ปิดโปรแกรม spotify ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 810, "cat": "win_proc", "q": "บน ubuntu ดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 811, "cat": "win_proc", "q": "บน ubuntu รีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 812, "cat": "win_proc", "q": "บน ubuntu ปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 813, "cat": "win_proc", "q": "บน ubuntu เครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 814, "cat": "win_net", "q": "บน ubuntu เช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 815, "cat": "win_net", "q": "บน ubuntu ดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 816, "cat": "win_net", "q": "บน ubuntu ping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 817, "cat": "win_net", "q": "บน ubuntu ดูว่า port 22 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 818, "cat": "win_pkg", "q": "บน ubuntu ติดตั้งโปรแกรม firefox เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 819, "cat": "win_pkg", "q": "บน ubuntu ถอนโปรแกรม chrome ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 820, "cat": "win_pkg", "q": "บน ubuntu ดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 821, "cat": "win_pkg", "q": "บน ubuntu อัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 822, "cat": "win_perm", "q": "บน ubuntu รันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 823, "cat": "win_perm", "q": "บน ubuntu ไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 824, "cat": "win_perm", "q": "บน ubuntu เปลี่ยนสิทธิ์ไฟล์ photo.jpg ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 825, "cat": "win_perm", "q": "บน ubuntu ไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 826, "cat": "win_env", "q": "บน ubuntu ตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 827, "cat": "win_env", "q": "บน ubuntu ดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 828, "cat": "win_env", "q": "บน ubuntu ตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 829, "cat": "win_text", "q": "บน ubuntu เปิดไฟล์ resume.docx ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 830, "cat": "win_text", "q": "บน ubuntu แก้ไขไฟล์ notes.md ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 831, "cat": "win_text", "q": "บน ubuntu ดูเนื้อหาไฟล์ data.txt", "hints": ["cat|less|head"]}
+{"id": 832, "cat": "win_zip", "q": "บน ubuntu บีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 833, "cat": "win_zip", "q": "บน ubuntu แตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 834, "cat": "win_zip", "q": "บน ubuntu แตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 835, "cat": "win_user", "q": "บน ubuntu เปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 836, "cat": "win_user", "q": "บน ubuntu ดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 837, "cat": "win_user", "q": "บน ubuntu สลับ user", "hints": ["su |sudo -u"]}
+{"id": 838, "cat": "win_git", "q": "บน ubuntu โหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 839, "cat": "win_git", "q": "บน ubuntu ดูสถานะ git", "hints": ["git status"]}
+{"id": 840, "cat": "win_misc", "q": "บน ubuntu เครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 841, "cat": "win_misc", "q": "บน ubuntu ดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 842, "cat": "win_misc", "q": "บน ubuntu เปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 843, "cat": "win_misc", "q": "บน ubuntu คำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 844, "cat": "win_misc", "q": "บน ubuntu จอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 845, "cat": "win_misc", "q": "บน ubuntu Blue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 846, "cat": "win_misc", "q": "บน ubuntu Registry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 847, "cat": "win_misc", "q": "บน ubuntu Control Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 848, "cat": "win_misc", "q": "บน ubuntu Device Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 849, "cat": "win_misc", "q": "บน ubuntu Print Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 850, "cat": "win_misc", "q": "บน ubuntu เปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 851, "cat": "win_misc", "q": "บน ubuntu เช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 852, "cat": "win_misc", "q": "บน ubuntu Bluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 853, "cat": "win_misc", "q": "บน ubuntu ต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 854, "cat": "win_thai", "q": "บน ubuntu จะลงโปรแกรม docker ยังไง", "hints": ["apt|install|snap"]}
+{"id": 855, "cat": "win_thai", "q": "บน ubuntu ขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 856, "cat": "win_thai", "q": "บน ubuntu ไปที่โฟลเดอร์ Documents", "hints": ["cd"]}
+{"id": 857, "cat": "win_thai", "q": "บน ubuntu อยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 858, "cat": "win_thai", "q": "บน ubuntu ค้นหาคำว่า TODO ในไฟล์", "hints": ["grep|rg"]}
+{"id": 859, "cat": "win_thai", "q": "บน ubuntu ดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 860, "cat": "win_thai", "q": "บน ubuntu เช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 861, "cat": "win_thai", "q": "บน ubuntu ลบทุกอย่างในโฟลเดอร์ project", "hints": ["rm"]}
+{"id": 862, "cat": "win_thai", "q": "บน ubuntu สำเนาโฟลเดอร์ home ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 863, "cat": "win_thai", "q": "บน ubuntu เปิดเว็บ github.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 864, "cat": "win_thai", "q": "บน ubuntu ดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 865, "cat": "win_thai", "q": "บน ubuntu เช็คว่า nginx ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 866, "cat": "win_thai", "q": "บน ubuntu รันสคริปต์ report.pdf.sh", "hints": ["bash|chmod|./"]}
+{"id": 867, "cat": "win_thai", "q": "บน ubuntu ทำไมคำสั่ง python ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 868, "cat": "win_thai", "q": "บน ubuntu จะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 869, "cat": "win_thai", "q": "บน ubuntu Desktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 870, "cat": "win_thai", "q": "บน ubuntu Downloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 871, "cat": "win_thai", "q": "บน ubuntu Documents โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 872, "cat": "win_vague", "q": "บน ubuntu ทำยังไง", "hints": []}
+{"id": 873, "cat": "win_vague", "q": "บน ubuntu ช่วยหน่อย", "hints": []}
+{"id": 874, "cat": "win_vague", "q": "บน ubuntu มันไม่ work", "hints": []}
+{"id": 875, "cat": "win_vague", "q": "บน ubuntu พังหมดเลย", "hints": []}
+{"id": 876, "cat": "win_vague", "q": "บน ubuntu ปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 877, "cat": "win_vague", "q": "บน ubuntu ลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 878, "cat": "win_vague", "q": "บน ubuntu แก้ให้หน่อย", "hints": []}
+{"id": 879, "cat": "win_vague", "q": "บน ubuntu รันให้หน่อย", "hints": []}
+{"id": 880, "cat": "win_file", "q": "ผมใช้ windows มาก่อน จะคัดลอกไฟล์ report.pdf ไปโฟลเดอร์ src ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 881, "cat": "win_file", "q": "ผมใช้ windows มาก่อน อยาก copy ไฟล์ backup.zip เหมือนใน Windows", "hints": ["cp"]}
+{"id": 882, "cat": "win_file", "q": "ผมใช้ windows มาก่อน ย้ายไฟล์ app.deb ไป src", "hints": ["mv"]}
+{"id": 883, "cat": "win_file", "q": "ผมใช้ windows มาก่อน ลบไฟล์ photo.jpg ทิ้ง", "hints": ["rm"]}
+{"id": 884, "cat": "win_file", "q": "ผมใช้ windows มาก่อน ถังขยะอยู่ไหน อยากกู้ไฟล์ที่ลบ", "hints": ["trash|restore|~/.local/share/Trash"]}
+{"id": 885, "cat": "win_file", "q": "ผมใช้ windows มาก่อน เปิดโฟลเดอร์ Documents ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 886, "cat": "win_file", "q": "ผมใช้ windows มาก่อน หาไฟล์ชื่อ config.json ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 887, "cat": "win_file", "q": "ผมใช้ windows มาก่อน แสดงไฟล์ที่ซ่อนอยู่ในโฟลเดอร์นี้", "hints": ["ls.*-a|ls -la"]}
+{"id": 888, "cat": "win_file", "q": "ผมใช้ windows มาก่อน เปลี่ยนชื่อไฟล์ notes.md เป็น photo.jpg", "hints": ["mv"]}
+{"id": 889, "cat": "win_file", "q": "ผมใช้ windows มาก่อน สร้างโฟลเดอร์ใหม่ชื่อ home", "hints": ["mkdir"]}
+{"id": 890, "cat": "win_disk", "q": "ผมใช้ windows มาก่อน ไดรฟ์ C อยู่ไหนใน Linux", "hints": ["df|lsblk|mount|/"]}
+{"id": 891, "cat": "win_disk", "q": "ผมใช้ windows มาก่อน เช็คพื้นที่ดิสก์เหลือเท่าไหร่", "hints": ["df"]}
+{"id": 892, "cat": "win_disk", "q": "ผมใช้ windows มาก่อน ดูว่า SSD หรือ HDD", "hints": ["lsblk|smartctl|rotational"]}
+{"id": 893, "cat": "win_disk", "q": "ผมใช้ windows มาก่อน ทำความสะอาดดิสก์เหมือน Disk Cleanup", "hints": ["apt.*autoclean|journalctl.*vacuum|du|ncdu"]}
+{"id": 894, "cat": "win_disk", "q": "ผมใช้ windows มาก่อน ดูไฟล์ไหนกินพื้นที่เยอะสุด", "hints": ["du|ncdu"]}
+{"id": 895, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน เปิด Task Manager ดูโปรแกรมค้าง", "hints": ["htop|top|ps"]}
+{"id": 896, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน ดูว่าโปรแกรมไหนกิน CPU เยอะ", "hints": ["top|htop|ps.*cpu"]}
+{"id": 897, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน ปิดโปรแกรม python ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 898, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน ดู process ทั้งหมดที่รันอยู่", "hints": ["ps aux|ps -ef"]}
+{"id": 899, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน รีสตาร์ทเครื่อง", "hints": ["reboot|shutdown -r"]}
+{"id": 900, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน ปิดเครื่อง", "hints": ["shutdown|poweroff"]}
+{"id": 901, "cat": "win_proc", "q": "ผมใช้ windows มาก่อน เครื่องค้าง จะ force quit ยังไง", "hints": ["kill|xkill|pkill"]}
+{"id": 902, "cat": "win_net", "q": "ผมใช้ windows มาก่อน เช็คว่าต่อ wifi ได้ไหม", "hints": ["nmcli|iwconfig|ip"]}
+{"id": 903, "cat": "win_net", "q": "ผมใช้ windows มาก่อน ดู IP เครื่องนี้", "hints": ["ip a|hostname -I|ifconfig"]}
+{"id": 904, "cat": "win_net", "q": "ผมใช้ windows มาก่อน ping ทดสอบเน็ต", "hints": ["ping"]}
+{"id": 905, "cat": "win_net", "q": "ผมใช้ windows มาก่อน ดูว่า port 3000 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 906, "cat": "win_pkg", "q": "ผมใช้ windows มาก่อน ติดตั้งโปรแกรม ollama เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 907, "cat": "win_pkg", "q": "ผมใช้ windows มาก่อน ถอนโปรแกรม nginx ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 908, "cat": "win_pkg", "q": "ผมใช้ windows มาก่อน ดูว่าติดตั้งอะไรไว้บ้าง", "hints": ["apt list|dpkg -l|snap list"]}
+{"id": 909, "cat": "win_pkg", "q": "ผมใช้ windows มาก่อน อัปเดต Windows update แบบนี้ทำยังไง", "hints": ["apt update|apt upgrade"]}
+{"id": 910, "cat": "win_perm", "q": "ผมใช้ windows มาก่อน รันแบบ Run as administrator", "hints": ["sudo"]}
+{"id": 911, "cat": "win_perm", "q": "ผมใช้ windows มาก่อน ไม่มีสิทธิ์ permission denied แก้ยังไง", "hints": ["sudo|chmod|chown"]}
+{"id": 912, "cat": "win_perm", "q": "ผมใช้ windows มาก่อน เปลี่ยนสิทธิ์ไฟล์ data.txt ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 913, "cat": "win_perm", "q": "ผมใช้ windows มาก่อน ไฟล์รันไม่ได้ permission denied", "hints": ["chmod \\+x|chmod 755"]}
+{"id": 914, "cat": "win_env", "q": "ผมใช้ windows มาก่อน ตั้งค่า PATH เหมือนใน Windows", "hints": ["export PATH|echo \\$PATH"]}
+{"id": 915, "cat": "win_env", "q": "ผมใช้ windows มาก่อน ดูตัวแปร environment ทั้งหมด", "hints": ["env|printenv"]}
+{"id": 916, "cat": "win_env", "q": "ผมใช้ windows มาก่อน ตั้งค่า EDITOR=nano ชั่วคราว", "hints": ["export"]}
+{"id": 917, "cat": "win_text", "q": "ผมใช้ windows มาก่อน เปิดไฟล์ backup.zip ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 918, "cat": "win_text", "q": "ผมใช้ windows มาก่อน แก้ไขไฟล์ music.mp3 ใน terminal", "hints": ["nano|vim|sed"]}
+{"id": 919, "cat": "win_text", "q": "ผมใช้ windows มาก่อน ดูเนื้อหาไฟล์ notes.md", "hints": ["cat|less|head"]}
+{"id": 920, "cat": "win_zip", "q": "ผมใช้ windows มาก่อน บีบอัดไฟล์เป็น zip", "hints": ["zip"]}
+{"id": 921, "cat": "win_zip", "q": "ผมใช้ windows มาก่อน แตกไฟล์ zip", "hints": ["unzip"]}
+{"id": 922, "cat": "win_zip", "q": "ผมใช้ windows มาก่อน แตกไฟล์ tar.gz", "hints": ["tar"]}
+{"id": 923, "cat": "win_user", "q": "ผมใช้ windows มาก่อน เปลี่ยนรหัสผ่าน", "hints": ["passwd"]}
+{"id": 924, "cat": "win_user", "q": "ผมใช้ windows มาก่อน ดูว่า login เป็น user ไหน", "hints": ["whoami|id"]}
+{"id": 925, "cat": "win_user", "q": "ผมใช้ windows มาก่อน สลับ user", "hints": ["su |sudo -u"]}
+{"id": 926, "cat": "win_git", "q": "ผมใช้ windows มาก่อน โหลดโปรเจกต์จาก github", "hints": ["git clone"]}
+{"id": 927, "cat": "win_git", "q": "ผมใช้ windows มาก่อน ดูสถานะ git", "hints": ["git status"]}
+{"id": 928, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน เครื่องเปิดมานานแค่ไหนแล้ว", "hints": ["uptime"]}
+{"id": 929, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน ดูเวอร์ชัน Linux", "hints": ["uname|lsb_release"]}
+{"id": 930, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน เปิด terminal ยังไง", "hints": ["ctrl|gnome-terminal|konsole"]}
+{"id": 931, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน คำสั่ง help ดูว่ามีคำสั่งอะไร", "hints": ["man |--help|help"]}
+{"id": 932, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน จอค้าง กดอะไร", "hints": ["tty|chvt|reboot"]}
+{"id": 933, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน Blue Screen ใน Linux เรียกอะไร", "hints": ["journalctl|dmesg|kernel panic"]}
+{"id": 934, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน Registry อยู่ไหน", "hints": ["/etc|dconf|gsettings"]}
+{"id": 935, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน Control Panel อยู่ไหน", "hints": ["settings|gnome-control|systemsettings"]}
+{"id": 936, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน Device Manager ดูยังไง", "hints": ["lspci|lsusb|lshw"]}
+{"id": 937, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน Print Screen จับภาพหน้าจอ", "hints": ["scrot|gnome-screenshot|import"]}
+{"id": 938, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน เปิด Calculator", "hints": ["gnome-calculator|bc|python3"]}
+{"id": 939, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน เช็คแบตเหลือเท่าไหร่", "hints": ["upower|acpi"]}
+{"id": 940, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน Bluetooth เปิดยังไง", "hints": ["bluetoothctl|rfkill"]}
+{"id": 941, "cat": "win_misc", "q": "ผมใช้ windows มาก่อน ต่อ printer", "hints": ["lpstat|cups"]}
+{"id": 942, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน จะลงโปรแกรม firefox ยังไง", "hints": ["apt|install|snap"]}
+{"id": 943, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ขอดูไฟล์ในโฟลเดอร์ปัจจุบัน", "hints": ["ls"]}
+{"id": 944, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ไปที่โฟลเดอร์ backup", "hints": ["cd"]}
+{"id": 945, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน อยู่โฟลเดอร์ไหนอยู่", "hints": ["pwd"]}
+{"id": 946, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ค้นหาคำว่า password ในไฟล์", "hints": ["grep|rg"]}
+{"id": 947, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ดาวน์โหลดไฟล์จากเน็ต", "hints": ["wget|curl"]}
+{"id": 948, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน เช็คว่าเครื่องร้อนไหม", "hints": ["sensors|acpi|htop"]}
+{"id": 949, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ลบทุกอย่างในโฟลเดอร์ Downloads", "hints": ["rm"]}
+{"id": 950, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน สำเนาโฟลเดอร์ Desktop ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 951, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน เปิดเว็บ google.com ใน browser", "hints": ["xdg-open|firefox|chromium"]}
+{"id": 952, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ดู log error ระบบ", "hints": ["journalctl|dmesg|/var/log"]}
+{"id": 953, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน เช็คว่า code ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 954, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน รันสคริปต์ backup.zip.sh", "hints": ["bash|chmod|./"]}
+{"id": 955, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน ทำไมคำสั่ง nginx ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 956, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน จะใช้ sudo ทุกครั้งไม่ได้ ทำยังไง", "hints": ["sudoers|usermod"]}
+{"id": 957, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน Desktop อยู่ path ไหน", "hints": ["~/Desktop|xdg-user-dir"]}
+{"id": 958, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน Downloads อยู่ไหน", "hints": ["~/Downloads|xdg-user-dir"]}
+{"id": 959, "cat": "win_thai", "q": "ผมใช้ windows มาก่อน Documents โฟลเดอร์เอกสารอยู่ไหน", "hints": ["xdg-user-dir|~/Documents"]}
+{"id": 960, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน ทำยังไง", "hints": []}
+{"id": 961, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน ช่วยหน่อย", "hints": []}
+{"id": 962, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน มันไม่ work", "hints": []}
+{"id": 963, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน พังหมดเลย", "hints": []}
+{"id": 964, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน ปิดทั้งหมด", "hints": ["pkill|killall"]}
+{"id": 965, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน ลบทิ้งให้หมด", "hints": ["rm"]}
+{"id": 966, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน แก้ให้หน่อย", "hints": []}
+{"id": 967, "cat": "win_vague", "q": "ผมใช้ windows มาก่อน รันให้หน่อย", "hints": []}
+{"id": 968, "cat": "win_file", "q": "จะคัดลอกไฟล์ app.deb ไปโฟลเดอร์ home ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 969, "cat": "win_file", "q": "อยาก copy ไฟล์ resume.docx เหมือนใน Windows", "hints": ["cp"]}
+{"id": 970, "cat": "win_file", "q": "ย้ายไฟล์ resume.docx ไป Downloads", "hints": ["mv"]}
+{"id": 971, "cat": "win_file", "q": "ลบไฟล์ backup.zip ทิ้ง", "hints": ["rm"]}
+{"id": 972, "cat": "win_file", "q": "เปิดโฟลเดอร์ src ใน file explorer", "hints": ["xdg-open|nautilus|thunar|dolphin"]}
+{"id": 973, "cat": "win_file", "q": "หาไฟล์ชื่อ resume.docx ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 974, "cat": "win_file", "q": "เปลี่ยนชื่อไฟล์ music.mp3 เป็น backup.zip", "hints": ["mv"]}
+{"id": 975, "cat": "win_file", "q": "สร้างโฟลเดอร์ใหม่ชื่อ Pictures", "hints": ["mkdir"]}
+{"id": 976, "cat": "win_proc", "q": "ปิดโปรแกรม java ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 977, "cat": "win_net", "q": "ดูว่า port 22 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 978, "cat": "win_pkg", "q": "ติดตั้งโปรแกรม chrome เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 979, "cat": "win_perm", "q": "เปลี่ยนสิทธิ์ไฟล์ script.sh ให้ทุกคนอ่านได้", "hints": ["chmod"]}
+{"id": 980, "cat": "win_text", "q": "เปิดไฟล์ photo.jpg ด้วย notepad", "hints": ["nano|vim|gedit|xdg-open|cat"]}
+{"id": 981, "cat": "win_text", "q": "ดูเนื้อหาไฟล์ app.deb", "hints": ["cat|less|head"]}
+{"id": 982, "cat": "win_thai", "q": "จะลงโปรแกรม ollama ยังไง", "hints": ["apt|install|snap"]}
+{"id": 983, "cat": "win_thai", "q": "ไปที่โฟลเดอร์ Downloads", "hints": ["cd"]}
+{"id": 984, "cat": "win_thai", "q": "ลบทุกอย่างในโฟลเดอร์ Desktop", "hints": ["rm"]}
+{"id": 985, "cat": "win_thai", "q": "สำเนาโฟลเดอร์ project ทั้งก้อน", "hints": ["cp -r|rsync"]}
+{"id": 986, "cat": "win_thai", "q": "เช็คว่า docker ติดตั้งแล้วหรือยัง", "hints": ["which|dpkg -l|command -v"]}
+{"id": 987, "cat": "win_thai", "q": "รันสคริปต์ report.pdf.sh", "hints": ["bash|chmod|./"]}
+{"id": 988, "cat": "win_thai", "q": "ทำไมคำสั่ง ollama ไม่เจอ command not found", "hints": ["which|apt install|command -v"]}
+{"id": 989, "cat": "win_file", "q": "ขอจะคัดลอกไฟล์ data.txt ไปโฟลเดอร์ home ทำยังไง", "hints": ["cp|rsync"]}
+{"id": 990, "cat": "win_file", "q": "ขออยาก copy ไฟล์ music.mp3 เหมือนใน Windows", "hints": ["cp"]}
+{"id": 991, "cat": "win_file", "q": "ขอย้ายไฟล์ report.pdf ไป home", "hints": ["mv"]}
+{"id": 992, "cat": "win_file", "q": "ขอลบไฟล์ resume.docx ทิ้ง", "hints": ["rm"]}
+{"id": 993, "cat": "win_file", "q": "ขอหาไฟล์ชื่อ config.json ในเครื่อง", "hints": ["find|locate|fd"]}
+{"id": 994, "cat": "win_file", "q": "ขอเปลี่ยนชื่อไฟล์ backup.zip เป็น music.mp3", "hints": ["mv"]}
+{"id": 995, "cat": "win_file", "q": "ขอสร้างโฟลเดอร์ใหม่ชื่อ backup", "hints": ["mkdir"]}
+{"id": 996, "cat": "win_proc", "q": "ขอปิดโปรแกรม chrome ที่ค้าง", "hints": ["kill|pkill"]}
+{"id": 997, "cat": "win_net", "q": "ขอดูว่า port 3000 เปิดอยู่ไหม", "hints": ["ss|netstat|lsof"]}
+{"id": 998, "cat": "win_pkg", "q": "ขอติดตั้งโปรแกรม code เหมือน install ใน Windows", "hints": ["apt install|snap install|flatpak"]}
+{"id": 999, "cat": "win_pkg", "q": "ขอถอนโปรแกรม ollama ออก", "hints": ["apt remove|snap remove|dpkg -r"]}
+{"id": 1000, "cat": "win_perm", "q": "ขอเปลี่ยนสิทธิ์ไฟล์ notes.md ให้ทุกคนอ่านได้", "hints": ["chmod"]}

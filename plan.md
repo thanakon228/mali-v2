@@ -97,7 +97,7 @@ mali-v2/
 - [x] `harness/cli.py` — `mali "คำขอ"`, `--help`, `--version`, health check Ollama
 - [x] `mali` — entry script
 - [x] `tests/test_parse.py` — unit test ทุกรูปแบบ output ของโมเดล 3B
-- [x] `harness/__init__.py` — `__version__ = "0.1.0"`
+- [x] `harness/__init__.py` — `__version__ = "0.2.0"`
 
 ### `parse_tool_calls()` spec
 

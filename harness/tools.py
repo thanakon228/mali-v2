@@ -5,6 +5,7 @@ import re
 import shlex
 import subprocess
 
+from .cmd_fixup import normalize_cmd
 from .config import CONFIG_DIR, get_config
 from .confirm import C_BOLD, C_CYAN, C_DIM, C_GRN, C_OFF, ask, confirm
 from .safety import Risk, classify
@@ -92,7 +93,32 @@ def _intent_fallback(cmd: str) -> str:
             return "ถอนโปรแกรมออก"
         if "update" in toks or "upgrade" in toks:
             return "อัปเดตแพ็กเกจของระบบ"
+        if "list" in toks:
+            return "ดูรายการแพ็กเกจที่ติดตั้ง"
     return _INTENT.get(head, f"รันคำสั่ง {head}")
+
+
+def exit_code_from_result(result: str) -> int:
+    """ดึง exit code จากข้อความคืนของ run_command"""
+    if not result:
+        return 1
+    first = result.split("\n", 1)[0]
+    if first.startswith("exit_code="):
+        try:
+            return int(first.split("=", 1)[1])
+        except ValueError:
+            return 1
+    if first.startswith("ผู้ใช้ปฏิเสธ"):
+        return 130
+    return 1
+
+
+def run_direct_command(cmd: str) -> str:
+    """ผู้ใช้พิมพ์ shell ตรง ๆ — อธิบายก่อน แล้วถามยืนยัน"""
+    intent = _intent_fallback(cmd)
+    print(f"\n{C_DIM}↳ คุณพิมพ์คำสั่ง shell เอง — ไม่ผ่านโมเดล{C_OFF}")
+    print(f"  {C_CYAN}จะทำ: {intent}{C_OFF}")
+    return run_command({"cmd": cmd, "explain": intent})
 
 
 def _on_reject(bad_cmd: str) -> str | None:
@@ -131,6 +157,12 @@ def run_command(args: dict) -> str:
         print(f"  {C_DIM}(โมเดลส่งคำสั่งว่างมา — ข้าม){C_OFF}")
         return "ไม่มีคำสั่งให้รัน (args.cmd ว่าง) — โปรดส่งคำสั่ง shell จริงใน field cmd"
 
+    fixed, fix_note = normalize_cmd(cmd)
+    if fix_note and fixed != cmd:
+        print(f"  {C_DIM}↳ แก้คำสั่งอัตโนมัติ: {fix_note}{C_OFF}")
+        print(f"  {C_DIM}  เดิม: {cmd}{C_OFF}")
+        cmd = fixed
+
     intent = explain.strip()
     while intent.startswith("คุณกำลังจะ"):
         intent = intent[len("คุณกำลังจะ"):].lstrip(". ").strip()
@@ -150,18 +182,14 @@ def run_command(args: dict) -> str:
             "สรุปสั้น ๆ ให้ผู้ใช้ว่าแนะนำคำสั่งอะไรและทำอะไร แล้วจบ ไม่ต้องเรียก tool อีก"
         )
 
-    if risk is not Risk.GREEN:
-        if not confirm(cmd, risk, why, intent):
-            replacement = _on_reject(cmd)
-            if not replacement:
-                return f"ผู้ใช้ปฏิเสธไม่ให้รันคำสั่ง: {cmd}"
-            cmd = replacement.strip()
-            risk, why = classify(cmd)
-            if risk is not Risk.GREEN and not confirm(cmd, risk, why, "คำสั่งที่คุณให้มา"):
-                return f"ผู้ใช้ปฏิเสธไม่ให้รันคำสั่ง: {cmd}"
-    else:
-        print(f"\n  {C_CYAN}คุณกำลังจะ: {intent}{C_OFF}")
-        print(f"  {C_GRN}● ปลอดภัย{C_OFF}  {C_BOLD}$ {cmd}{C_OFF}")
+    if not confirm(cmd, risk, why, intent):
+        replacement = _on_reject(cmd)
+        if not replacement:
+            return f"ผู้ใช้ปฏิเสธไม่ให้รันคำสั่ง: {cmd}"
+        cmd = replacement.strip()
+        risk, why = classify(cmd)
+        if not confirm(cmd, risk, why, "คำสั่งที่คุณให้มา"):
+            return f"ผู้ใช้ปฏิเสธไม่ให้รันคำสั่ง: {cmd}"
 
     global _CWD
     wrapped = f"{cmd}\n__rc=$?; printf '\\n{_SENTINEL}%s\\n' \"$PWD\"; exit $__rc"

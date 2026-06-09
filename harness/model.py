@@ -15,10 +15,7 @@ _BASH_BLOCK = re.compile(
     r"```(?:bash|sh|shell)?\s*\n(.*?)```",
     re.DOTALL | re.IGNORECASE,
 )
-_EMBEDDED_JSON = re.compile(
-    r'\{[^{}]*"name"\s*:\s*"(?:run_command|explain_command)"[^{}]*\}',
-    re.DOTALL,
-)
+_TOOL_NAMES = frozenset({"run_command", "explain_command"})
 
 
 class ModelError(RuntimeError):
@@ -42,6 +39,63 @@ def _normalize_call(name: str, arguments) -> dict | None:
     if not name:
         return None
     return {"name": name, "arguments": _parse_arguments(arguments)}
+
+
+def _find_json_objects(text: str) -> list[str]:
+    """หา JSON object ที่มี balanced braces (รองรับ nested arguments)"""
+    objects: list[str] = []
+    i, n = 0, len(text)
+    while i < n:
+        if text[i] != "{":
+            i += 1
+            continue
+        depth = 0
+        start = i
+        in_str = esc = False
+        for j in range(i, n):
+            ch = text[j]
+            if in_str:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == '"':
+                    in_str = False
+                continue
+            if ch == '"':
+                in_str = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    objects.append(text[start : j + 1])
+                    i = j + 1
+                    break
+        else:
+            i += 1
+    return objects
+
+
+def _embedded_tool_calls(content: str) -> list[dict]:
+    for raw in _find_json_objects(content):
+        try:
+            obj = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(obj, dict):
+            continue
+        name = (obj.get("name") or "").strip()
+        if name not in _TOOL_NAMES:
+            fn = obj.get("function")
+            if isinstance(fn, dict):
+                name = (fn.get("name") or "").strip()
+        if name not in _TOOL_NAMES:
+            continue
+        parsed = _from_json_obj(obj)
+        if parsed:
+            return parsed
+    return []
 
 
 def _from_json_obj(obj: dict) -> list[dict]:
@@ -95,14 +149,10 @@ def parse_tool_calls(msg: dict) -> list[dict]:
         except json.JSONDecodeError:
             pass
 
-    # 4. JSON ฝังใน content
-    for match in _EMBEDDED_JSON.finditer(content):
-        try:
-            parsed = _from_json_obj(json.loads(match.group(0)))
-            if parsed:
-                return parsed
-        except json.JSONDecodeError:
-            continue
+    # 4. JSON ฝังใน content (รองรับ nested + garbage prefix เช่น );\r\n{...})
+    parsed = _embedded_tool_calls(content)
+    if parsed:
+        return parsed
 
     # 5. bash code block — fallback suggest-only
     block_match = _BASH_BLOCK.search(content)

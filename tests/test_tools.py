@@ -41,10 +41,10 @@ def test_truncate():
 def test_examples_count():
     from bench.questions import QUESTIONS
 
-    if len(QUESTIONS) != 100:
-        print(f"  ✗ FAIL examples: ต้องมี 100 ข้อ แต่มี {len(QUESTIONS)}")
+    if len(QUESTIONS) < 120:
+        print(f"  ✗ FAIL examples: ต้องมีอย่างน้อย 120 ข้อ แต่มี {len(QUESTIONS)}")
         return False
-    print("  ✓ examples มี 100 ข้อ")
+    print(f"  ✓ examples มี {len(QUESTIONS)} ข้อ")
     return True
 
 

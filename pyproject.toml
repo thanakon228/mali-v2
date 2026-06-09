@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mali-v2"
-version = "0.1.0"
+version = "0.3.0"
 description = "Mali v2 — Thai CLI assistant harness (Ollama / thai-cli-3b-r2)"
 readme = "README.md"
 requires-python = ">=3.10"

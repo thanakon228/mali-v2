@@ -110,6 +110,26 @@ class TestParseToolCalls(unittest.TestCase):
         calls = parse_tool_calls(msg)
         self.assertEqual(calls[0]["arguments"]["cmd"], "right")
 
+    def test_embedded_json_with_garbage_prefix(self):
+        msg = {
+            "role": "assistant",
+            "content": (
+                ');\r\r\r\n\n{"name": "run_command", '
+                '"arguments": {"cmd": "mkdir Desktop", "explain": "สร้างโฟลเดอร์"}}'
+            ),
+        }
+        calls = parse_tool_calls(msg)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0]["arguments"]["cmd"], "mkdir Desktop")
+
+    def test_embedded_json_nested_arguments(self):
+        msg = {
+            "role": "assistant",
+            "content": '{"name": "run_command", "arguments": {"cmd": "git status"}}',
+        }
+        calls = parse_tool_calls(msg)
+        self.assertEqual(calls[0]["arguments"]["cmd"], "git status")
+
     def test_multiple_native_tool_calls(self):
         msg = {
             "role": "assistant",

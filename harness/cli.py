@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 """CLI entry point สำหรับ mali"""
 
-import json
 import os
 import sys
-import urllib.error
-import urllib.request
 
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _ROOT not in sys.path:
@@ -28,29 +25,6 @@ mali — ผู้ช่วย terminal ภาษาไทย (Ollama / thai-cli
 
 ตัวแปรสภาพแวดล้อม: MALI_MODEL, MALI_OLLAMA, MALI_YES, MALI_TIMEOUT
 """
-
-
-def _health_check() -> str | None:
-    from harness.config import get_config
-
-    cfg = get_config()
-    host, model = cfg["ollama_host"], cfg["model"]
-    try:
-        with urllib.request.urlopen(f"{host}/api/tags", timeout=3) as r:
-            names = [m["name"] for m in json.loads(r.read()).get("models", [])]
-    except (urllib.error.URLError, OSError, ValueError):
-        return (
-            f"❌ ต่อ Ollama ที่ {host} ไม่ได้\n"
-            f"   ลองสั่ง:  ollama serve"
-        )
-    if model not in names and not any(
-        n.split(":")[0] == model.split(":")[0] for n in names
-    ):
-        return (
-            f"❌ ยังไม่มีโมเดล '{model}'\n"
-            f"   ดูวิธีติดตั้ง: ~/Desktop/thai-cli-train/dist/INSTALL.md"
-        )
-    return None
 
 
 def main() -> int:
@@ -107,7 +81,9 @@ def main() -> int:
         return 0
 
     if not args and sys.stdin.isatty():
-        err = _health_check()
+        from harness.ollama_boot import ensure_ollama
+
+        err = ensure_ollama()
         if err:
             print(err)
             return 1
@@ -127,7 +103,9 @@ def main() -> int:
         print("ไม่มีคำขอ")
         return 64
 
-    err = _health_check()
+    from harness.ollama_boot import ensure_ollama
+
+    err = ensure_ollama(interactive=sys.stdin.isatty())
     if err:
         print(err)
         return 1
